@@ -1,0 +1,117 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  border: 12px solid rgba(255, 255, 255, 0.6);
+  border-radius: 18px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to bottom right, #208FD4, #f3f6f9);
+  opacity: 1;
+  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+}
+
+/* 🎨 Fondo decorativo */
+.loading-container::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  top: 10%;
+  left: 15%;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+  animation: floatAnimation 6s infinite alternate ease-in-out;
+}
+
+.loading-container::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  bottom: 8%;
+  right: 10%;
+  box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3);
+  animation: floatAnimation 7s infinite alternate-reverse ease-in-out;
+}
+
+.spinner-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInScale 1.8s ease-out;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px;
+  border-radius: 18px;
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  border: 8px solid rgba(255, 255, 255, 0.3);
+  border-top: 8px solid #ffffff;
+  border-radius: 50%;
+  position: relative;
+  animation: spin 1.5s linear infinite;
+}
+
+.spinner-logo {
+  position: absolute;
+  width: 60px; /* Ajusta el tamaño del logo */
+  height: 60px;
+  background-image: url('/assets/logoGisco2.png'); /* Ruta de la imagen */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Evita que interfiera con eventos de usuario */
+  filter: hue-rotate(220deg) brightness(1.2) saturate(1.5);
+  opacity: 0.7;
+}
+
+.loading-text {
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  animation: fadeInText 2s ease-in-out;
+}
+
+/* 🌀 Animaciones */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeInScale {
+  0% { opacity: 0; transform: scale(0.6); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInText {
+  0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatAnimation {
+  0% { transform: translateY(-10px); }
+  100% { transform: translateY(10px); }
+}
+
+/* 🔄 Efecto de salida */
+.fade-out {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}

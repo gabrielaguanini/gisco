@@ -1,0 +1,30 @@
+/* whatsapp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: #007bff;  /* Color primario en azul */
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1.5px solid rgba(0, 123, 255, 0.7);  /* Border color con el mismo azul */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s, border-color 0.3s;
+    z-index: 1000;
+  
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 123, 255, 1);  /* Border color en hover */
+}
+
+
+

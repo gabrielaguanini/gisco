@@ -1,0 +1,16 @@
+<div data-aos="fade-up" data-aos-duration="2000"> <!-- animación de inicio de componente --> 
+  <app-navbar></app-navbar>
+  <app-slider></app-slider>
+</div>
+ <!-- boton whatsapp -->
+ <a href="https://wa.me/5491112345678" class="whatsapp-button" target="_blank" aria-label="Chat en WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<div *ngIf="showCards">
+<app-cards></app-cards> <!-- AQUI NO HAY animacion de inicio de componente, intefiere con el modal de las cards-->
+</div>
+
+<div data-aos="fade-up" data-aos-duration="2000"> <!-- animacion de inicio de componente -->
+  <app-videos></app-videos>
+  <app-footer></app-footer>
+</div>
