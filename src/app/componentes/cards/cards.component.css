@@ -1,75 +1,110 @@
+ /* CARDS */
+ .card {
+     max-width: 100%;
+     /* Asegura que las tarjetas no excedan el contenedor */
+     flex-direction: column;
+     /* Cambiar a columna para una mejor disposición */
+     background-color: #696969;
+     border: 0;
+     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18);
+     margin: 1em 0;
+     /* Espaciado adecuado entre las tarjetas */
+     border-radius: 0.7em;
+     position: relative;
+     overflow: hidden;
+ }
 
-.card {
-    max-width: 100%;  /* Asegura que las tarjetas no excedan el contenedor */
-    flex-direction: column;  /* Cambiar a columna para una mejor disposición */
-    background-color: #696969;
-    border: 0;
-    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18);
-    margin: 1em 0;  /* Espaciado adecuado entre las tarjetas */
-    border-radius: 0.7em;
+ .card.dark {
+     color: #fff;
+ }
+
+
+
+ /* Ajuste para que todas las imágenes tengan el mismo tamaño */
+ .card img {
+     width: 100%;
+     height: 200px;
+     /* Ajusta según necesites */
+     object-fit: cover;
+     /* Hace que la imagen se recorte para llenar el contenedor */
+     border-radius: 0.7em;
+     position: relative;
+     z-index: 2;
+ }
+
+
+
+ .card-body {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     padding: 1em;
+ }
+
+ .text-section {
+     margin-bottom: 1em;
+ }
+
+ .cta-section {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: space-between;
+ }
+
+ .cta-section .btn {
+     padding: 0.5em 1em;
+ }
+
+ .card.bg-light-subtle .cta-section .btn {
+     background-color: #898989;
+     border-color: #898989;
+ }
+
+ /* MODALES */
+
+ .modal-header {
+     background-color: #208FD4;
+     color: white;
+     border-top-left-radius: 12px;
+     border-top-right-radius: 12px;
+ }
+
+ .modal-body {
+     background-color: #f3f6f9;
+     color: #333;
+     border-radius: 0 0 12px 12px;
+ }
+
+ .modal-footer {
+     background-color: #e6eff5;
+     border-radius: 0 0 12px 12px;     
+ }
+
+ .modal-close-btn {
+    background-color: #bbbbbb; 
+    color: white; 
+    border-radius: 8px   
 }
 
-.card.dark {
-    color: #fff;
-}
-
-.card.card.bg-light-subtle .card-title {
-    color: dimgrey;
-}
-
-.card img {
-    max-width: 100%;  /* Asegura que la imagen no se salga del contenedor */
-    height: auto;
-    margin: auto;
-    padding: 0.5em;
-    border-radius: 0.7em;
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1em;
-}
-
-.text-section {
-    margin-bottom: 1em;
-}
-
-.cta-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.cta-section .btn {
-    padding: 0.5em 1em;
-}
-
-.card.bg-light-subtle .cta-section .btn {
-    background-color: #898989;
-    border-color: #898989;
-}
-
-@media screen and (max-width: 475px) {
-    .card {
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .card-body {
-        flex-direction: row;  
-    }
-    .text-section {
-        max-width: 60%;
-    }
-    .cta-section {
-        max-width: 40%;
-    }
-}
 
 
+ @media screen and (max-width: 475px) {
+     .card {
+         font-size: 0.9em;
+     }
+ }
 
+ @media screen and (min-width: 768px) {
+     .card-body {
+         flex-direction: row;
+     }
 
+     .text-section {
+         max-width: 60%;
+     }
+
+     .cta-section {
+         max-width: 40%;
+     }
+ }
