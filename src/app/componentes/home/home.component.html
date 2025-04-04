@@ -6,9 +6,14 @@
  <a href="https://wa.me/5491112345678" class="whatsapp-button" target="_blank" aria-label="Chat en WhatsApp">
   <i class="fab fa-whatsapp"></i>
 </a>
+ <!-- componente cards acoplamientos -->
 <div *ngIf="showCards">
 <app-cards></app-cards> <!-- AQUI NO HAY animacion de inicio de componente, intefiere con el modal de las cards-->
 </div>
+ <!-- componente cards sellos -->
+<div *ngIf="showCards">
+  <app-cards-sellos></app-cards-sellos> <!-- AQUI NO HAY animacion de inicio de componente, intefiere con el modal de las cards-->
+  </div>
 
 <div data-aos="fade-up" data-aos-duration="2000"> <!-- animacion de inicio de componente -->
   <app-videos></app-videos>

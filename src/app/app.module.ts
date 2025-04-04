@@ -10,6 +10,7 @@ import { CardsComponent } from './componentes/cards/cards.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { VideosComponent } from './componentes/videos/videos.component';
 import { LoadingComponent } from './componentes/loading/loading.component';
+import { CardsSellosComponent } from './componentes/cards-sellos/cards-sellos.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoadingComponent } from './componentes/loading/loading.component';
     CardsComponent,
     FooterComponent,
     VideosComponent,
-    LoadingComponent
+    LoadingComponent,
+    CardsSellosComponent
   ],
   imports: [
     BrowserModule,
