@@ -1,20 +1,30 @@
-<div data-aos="fade-up" data-aos-duration="2000"> <!-- animación de inicio de componente --> 
+<div data-aos="fade-up" data-aos-duration="2000"> <!-- animación de inicio de componente -->
   <app-navbar></app-navbar>
   <app-slider></app-slider>
 </div>
- <!-- boton whatsapp -->
- <a href="https://wa.me/5491112345678" class="whatsapp-button" target="_blank" aria-label="Chat en WhatsApp">
+<!-- boton whatsapp 
+<a href="https://wa.me/5491112345678" class="whatsapp-button" target="_blank" aria-label="Chat en WhatsApp">
   <i class="fab fa-whatsapp"></i>
-</a>
- <!-- componente cards acoplamientos -->
+</a>-->
+<!-- componente cards acoplamientos -->
 <div *ngIf="showCards">
-<app-cards></app-cards> <!-- AQUI NO HAY animacion de inicio de componente, intefiere con el modal de las cards-->
+  <app-cards></app-cards> <!-- AQUI NO HAY animacion de inicio de componente, intefiere con el modal de las cards-->
 </div>
- <!-- componente cards sellos -->
+<!-- componente cards sellos -->
 <div *ngIf="showCards">
-  <app-cards-sellos></app-cards-sellos> <!-- AQUI NO HAY animacion de inicio de componente, intefiere con el modal de las cards-->
-  </div>
-
+  <app-cards-sellos></app-cards-sellos>
+  <!-- AQUI NO HAY animacion de inicio de componente, intefiere con el modal de las cards-->
+</div>
+<!-- componente cards reparacion sellos -->
+<div *ngIf="showCards">
+  <app-card-rep-sell-mec></app-card-rep-sell-mec>
+  <!-- AQUI NO HAY animacion de inicio de componente, intefiere con el modal de las cards-->
+</div>
+<!-- componente cards servicio de alineacion -->
+<div *ngIf="showCards">
+  <app-cards-serv-alin></app-cards-serv-alin>
+  <!-- AQUI NO HAY animacion de inicio de componente, intefiere con el modal de las cards-->
+</div>
 <div data-aos="fade-up" data-aos-duration="2000"> <!-- animacion de inicio de componente -->
   <app-videos></app-videos>
   <app-footer></app-footer>
