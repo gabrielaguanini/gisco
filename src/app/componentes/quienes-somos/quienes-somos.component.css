@@ -2,6 +2,7 @@
     background-color: white;
     overflow-x: hidden;
     padding-bottom: 2rem;
+    overflow-y: hidden;
 }
 
 .card {
@@ -14,14 +15,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 340px;
 }
+
 
 .card:hover {
     transform: translateY(-5px);
 }
 
-/* Asegura que las columnas se comporten como flex y estiren las cards */
+/* Asegura que todas las cards tengan el mismo tamaño*/
 .row.d-flex .col-lg-6 {
     display: flex;
 }
@@ -83,47 +84,50 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: #444;
-  }
-  
-  /* Card general */
-  .card {
+}
+
+/* Card general */
+.card {
     border-radius: 1rem;
     background-color: #fff;
     border: 1px solid #ddd;
-  }
-  
-  /* Contenedor de los logos */
-  .card .row {
+}
+
+/* Contenedor de los logos */
+.card .row {
     justify-content: center;
     align-items: center;
-  }
-  
-  /* Estilo para los logos */
-  .card img {
+}
+
+/* Estilo para los logos */
+.card img {
     max-height: 60px;
     width: 100%;
     object-fit: contain;
     padding: 0.5rem;
     transition: transform 0.2s ease;
-  }
-  
-  .card img:hover {
+}
+
+.card img:hover {
     transform: scale(1.05);
-  }
-  
+}
+
 
 /* RESPONSIVO */
 
-/*pantallas medianas */
-@media (min-width: 768px) {
-    .card {
-        min-height: 180px;
+/* ancho de cards para pantalals grandes*/
+@media (min-width: 992px) {
+    .custom-row>div {
+        max-width: 1000px;
     }
 }
 
-/* Pantallas grandes */
-@media (min-width: 992px) {
-    .card {
-        min-height: 220px;
+/* tamaño de la fuente del titulo y texto de las cards de servicios para pantallas pequeñas*/
+@media (max-width: 576px) {
+    .titulo-responsive {
+      font-size: 0.9rem; 
     }
-}
+    .textoCardServ{
+        font-size: 0.7rem; 
+    }
+  }
