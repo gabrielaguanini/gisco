@@ -2,6 +2,7 @@
  /* fondo todas el contenedor de las cards*/
  .containerBackG {
      background-color: white;
+     overflow-x: hidden; /* evita el desplazamiento de la pantalla hacia la derecha cuando vanc argando las animaciones*/
  }
 
  .card {
@@ -150,7 +151,8 @@
 
      .btnOpenModal {
          font-size: small;
-     }
+     }   
+     
  }
 
  @media screen and (min-width: 768px) {

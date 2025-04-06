@@ -4,6 +4,7 @@
  .containerBackG {
     background: linear-gradient(to bottom right, rgba(169, 169, 169, 0.4), rgba(255, 60, 60, 0.05));
     border-radius: 3%;
+    overflow-x: hidden; /* evita el desplazamiento de la pantalla hacia la derecha cuando vanc argando las animaciones*/
 }
 
 .card {

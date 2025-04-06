@@ -13,6 +13,7 @@ import { LoadingComponent } from './componentes/loading/loading.component';
 import { CardsSellosComponent } from './componentes/cards-sellos/cards-sellos.component';
 import { CardRepSellMecComponent } from './componentes/card-rep-sell-mec/card-rep-sell-mec.component';
 import { CardsServAlinComponent } from './componentes/cards-serv-alin/cards-serv-alin.component';
+import { QuienesSomosComponent } from './componentes/quienes-somos/quienes-somos.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CardsServAlinComponent } from './componentes/cards-serv-alin/cards-serv
     LoadingComponent,
     CardsSellosComponent,
     CardRepSellMecComponent,
-    CardsServAlinComponent
+    CardsServAlinComponent,
+    QuienesSomosComponent
   ],
   imports: [
     BrowserModule,

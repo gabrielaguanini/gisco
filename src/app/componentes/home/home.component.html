@@ -6,6 +6,10 @@
 <a href="https://wa.me/5491112345678" class="whatsapp-button" target="_blank" aria-label="Chat en WhatsApp">
   <i class="fab fa-whatsapp"></i>
 </a>-->
+<!-- componente quienes somos -->
+<div *ngIf="showCards">
+  <app-quienes-somos></app-quienes-somos> <!-- AQUI NO HAY animacion de inicio de componente, intefiere con el modal de las cards-->
+</div>
 <!-- componente cards acoplamientos -->
 <div *ngIf="showCards">
   <app-cards></app-cards> <!-- AQUI NO HAY animacion de inicio de componente, intefiere con el modal de las cards-->
