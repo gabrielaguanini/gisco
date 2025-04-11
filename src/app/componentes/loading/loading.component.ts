@@ -9,12 +9,21 @@ import { Router } from '@angular/router';
   styleUrl: './loading.component.css'
 })
 export class LoadingComponent implements OnInit {
-
   isFadingOut = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
+
+  preloadImage: HTMLImageElement = new Image();
+  backgroundLoaded = false;
 
   ngOnInit(): void {
+
+    this.preloadImage.src = 'assets/images/fondo-pesado.jpg'; // Cambiá esto por la URL real de tu background
+    this.preloadImage.onload = () => {
+      this.backgroundLoaded = true;
+    };
+
+
     setTimeout(() => {
       this.isFadingOut = true;
 
@@ -23,4 +32,6 @@ export class LoadingComponent implements OnInit {
       }, 1200); // Coincide con la animación de salida
     }, 5000);
   }
+
 }
+

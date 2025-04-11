@@ -1,5 +1,4 @@
-import { ViewportScroller } from '@angular/common';
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 
 @Component({
@@ -11,7 +10,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent {
 
-  constructor(private viewportScroller: ViewportScroller) { }
+  constructor() { }
 
   scrollTo(anchor: string): void {
     const element = document.getElementById(anchor);

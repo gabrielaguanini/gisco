@@ -1,61 +1,78 @@
- /* quita las reglas css del navbar (en la pantalla principal esta transparente entre otras) */
- .etiqNavbar{
-    position: relative !important;
-    z-index: auto !important;
-   
-  }
-  
-  
-  .etiqNavbar.navbar {
-    position: static !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    z-index: auto !important;  
-    
-  }
-  
-  ::ng-deep .etiqNavbar nav.navbar {
-    position: static !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    z-index: auto !important;
-    background-color: grey !important;
-    background-image: url('/assets/fondos/fondoPresNav.png')!important;
-  }
 
-  .bg-petrolero {
-    background-color: #208FD4 !important;
-  }
-  
-  .text-petrolero {
-    color: #208FD4 !important;
-  }
-  
-  .parrafoCurDesc {
-    min-height: 100px; /* Asegura alineación visual en las cards */
-  }
-  
-  /* Card hover efecto suave */
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .card {
-    transition: all 0.3s ease-in-out;
-  }
-  
-  /* Botones outline con colores personalizados */
-  .btn-outline-primary {
-    border-color: #208FD4;
-    color: #208FD4;
-  }
-  
-  .btn-outline-primary:hover {
-    background-color: #208FD4;
-    color: white;
+ /* quita las reglas css del navbar (en la pantalla principal esta transparente entre otras) */
+ .etiqNavbar {
+   position: relative !important;
+   z-index: auto !important;
+
+ }
+
+ .etiqNavbar.navbar {
+   position: static !important;
+   top: auto !important;
+   left: auto !important;
+   right: auto !important;
+   z-index: auto !important;
+
+ }
+
+ /* quita las reglas css del navbar (en la pantalla principal esta transparente) */
+ ::ng-deep .etiqNavbar nav.navbar {
+   position: static !important;
+   top: auto !important;
+   left: auto !important;
+   right: auto !important;
+   z-index: auto !important;
+   background-color: grey !important;
+   background-image: url('/assets/fondos/fondoPresNav.png') !important;
+ }
+
+ /* quita el item de la lista del navbar con id idItemNoMostrar */
+ ::ng-deep #idItemNoMostrar {
+   display: none;
+ }
+
+
+
+ .bg-petrolero {
+   background-color: #208FD4 !important;
+ }
+
+ .text-petrolero {
+   color: #208FD4 !important;
+ }
+
+ .parrafoCurDesc {
+   min-height: 100px;
+   /* Asegura alineación visual en las cards */
+ }
+
+ /* Card hover efecto suave */
+ .card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+   transition: all 0.3s ease-in-out;
+ }
+
+ .card {
+   transition: all 0.3s ease-in-out;
+ }
+
+ /* Botones outline con colores personalizados */
+ .btn-outline-primary {
+   border-color: #208FD4;
+   color: #208FD4;
+ }
+
+ .btn-outline-primary:hover {
+   background-color: #208FD4;
+   color: white;
+ }
+
+  /* Para lanscape o cel volteado, le da padding para que la barra de navegacion de android no tape parte de la pantalla */
+  @media screen and (max-height: 450px) and (max-width: 950px) {
+    .containerBackG {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
   }
   

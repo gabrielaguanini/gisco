@@ -26,21 +26,34 @@ a {
     height: 36px;
 }
 
+/* Tamaño item Productos y Servicios*/
+.nowrap {
+    white-space: nowrap;
+}
+
+
 /* RESPONSIVO */
 
 /* Para pantallas pequeñas */
 @media (max-width: 767.98px) {
     .containerRedes {
-      display: none !important;
+        display: none !important;
     }
+
+
 }
+
 
 /* Para pantallas medianas (entre 768px y 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     .containerRedes {
-      display: none !important;
+        display: none !important;
     }
-    .navbar-toggler{
-        margin-right: 10%;
+    .logoNAv{
+        padding-left: 5%;
     }
+    .contaBtnHamb{
+        margin-right: 7%;
+    }
+ 
 }

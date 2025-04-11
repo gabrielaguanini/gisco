@@ -1,25 +1,27 @@
 .containerBackG {
-    background-color: white;
-    position: relative;
-    overflow-x: hidden; /* evita el desplazamiento de la pantalla hacia la derecha cuando vanc argando las animaciones*/
+  background-color: white;
+  position: relative;
+  overflow-x: hidden;
+  /* evita el desplazamiento de la pantalla hacia la derecha cuando vanc argando las animaciones*/
 }
- /* quita las reglas css del navbar (en la pantalla principal esta transparente entre otras) */
-.etiqNavbar{
+
+.etiqNavbar {
   position: relative !important;
   z-index: auto !important;
- 
+
 }
 
-
+/* quita las reglas css del navbar (en la pantalla principal esta transparente entre otras) */
 .etiqNavbar.navbar {
   position: static !important;
   top: auto !important;
   left: auto !important;
   right: auto !important;
-  z-index: auto !important;  
-  
+  z-index: auto !important;
+
 }
 
+/* quita las reglas css del navbar (en la pantalla principal esta transparente) */
 ::ng-deep .etiqNavbar nav.navbar {
   position: static !important;
   top: auto !important;
@@ -27,76 +29,89 @@
   right: auto !important;
   z-index: auto !important;
   background-color: grey !important;
-  background-image: url('/assets/fondos/fondoPresNav.png')!important;
+  background-image: url('/assets/fondos/fondoPresNav.png') !important;
+}
+
+/* quita el item de la lista del navbar con id idItemNoMostrar */
+::ng-deep #idItemNoMostrar {
+  display: none;
 }
 
 
 .text-petrolero {
-    color: #208FD4 !important;
-  }
-  
-  .bg-petrolero {
-    background-color: #208FD4 !important;
-  }
+  color: #208FD4 !important;
+}
 
-  .card-header {
-    background-color: #208FD4 !important;
-  }
-  
-  .card:hover {
-    transform: translateY(-10px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
-  }
-  
-  .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+.bg-petrolero {
+  background-color: #208FD4 !important;
+}
+
+.card-header {
+  background-color: #208FD4 !important;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 
-  ul {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    column-gap: 2rem; /* Espacio entre columnas */
-    list-style: none;
-    padding: 0;
-    text-transform: uppercase;
-    hyphens: auto;
+ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  column-gap: 2rem;
+  /* Espacio entre columnas */
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+  hyphens: auto;
   word-break: break-word;
   overflow-wrap: break-word;
+}
+
+
+ul li {
+  break-inside: avoid;
+  /* Evita que se corten al pasar de una columna a otra */
+  margin: 0.5em 0;
+  font-weight: 500;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  position: relative;
+  padding-left: 1.5em;
+}
+
+ul li::before {
+  content: '▸';
+  /* se puede cambiar por '✔', '➤', '✦', etc. */
+  position: absolute;
+  left: 0;
+  color: #208FD4 !important;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+ul span {
+  margin-right: 0.5em;
+  color: #208FD4 !important;
+}
+
+.parrafoCurDesc {
+  height: 80px;
+}
+
+  /* Para lanscape o cel volteado, le da padding para que la barra de navegacion de android no tape parte de la pantalla */
+  @media screen and (max-height: 450px) and (max-width: 950px) {
+    .containerBackG {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
   }
-
-
-  ul li {
-    break-inside: avoid; /* Evita que se corten al pasar de una columna a otra */
-    margin: 0.5em 0;
-    font-weight: 500;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 1rem;
-    color: #333;
-    position: relative;
-    padding-left: 1.5em;
-  }
-
-  ul li::before {
-    content: '▸'; /* se puede cambiar por '✔', '➤', '✦', etc. */
-    position: absolute;
-    left: 0;
-    color:  #208FD4 !important;
-    font-size: 1.2em;
-    line-height: 1;
-  }
-
-  ul span {
-    margin-right: 0.5em;
-    color:  #208FD4 !important;
-  }
-
-  .parrafoCurDesc{
-    height: 80px;
-  }
-
-
-
   

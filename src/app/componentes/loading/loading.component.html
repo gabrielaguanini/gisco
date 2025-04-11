@@ -1,4 +1,4 @@
-<div class="loading-container" [ngClass]="{'fade-out': isFadingOut}">
+<div class="loading-container" *ngIf="!backgroundLoaded">
   <div class="background-overlay"></div>
   <div class="spinner-wrapper">
     <div class="energy-lines"></div>
