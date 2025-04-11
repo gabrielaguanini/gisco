@@ -45,14 +45,14 @@
      justify-content: space-between;
      padding: 1em;
  }
- 
- .tituloCard{
-    background-color: #208FD4 !important;
-    background-image: url('/assets/fondos/img4.png');
-    background-size:contain;
-    border-color: #146699 !important;
-    color: white !important;
-}
+
+ .tituloCard {
+     background-color: #208FD4 !important;
+     background-image: url('/assets/fondos/img4.png');
+     background-size: contain;
+     border-color: #146699 !important;
+     color: white !important;
+ }
 
 
  .text-section {
@@ -198,5 +198,10 @@
      }
  }
 
-
-  
+ /* Para lanscape o cel volteado, le da padding para que la barra de navegacion de android no tape parte de la pantalla */
+ @media screen and (max-height: 450px) and (max-width: 950px) {
+     .containerBackG {
+         padding-left: 50px;
+         padding-right: 50px;
+     }
+ }
