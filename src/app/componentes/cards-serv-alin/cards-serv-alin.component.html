@@ -1,14 +1,17 @@
 <!-- TITULO -->
 <div class="containerBackG">
-    <div class="container-fluid">
-        <div class="text-center my-3 pt-5" data-aos="fade-left">
+    <div class="container-fluid justify-content-center text-center" (click)="abrirCerrarContenedor()">
+        <div class="text-right my-3 pt-3" data-aos="fade-left">
             <h4
-                class="text-secondary fw-bold p-2 bg-light border border-secondary border-1 rounded d-inline-block tituloCard">
-                SERVICIO DE ALINEACION
+                class="col-10 text-secondary fw-bold p-2 bg-light border border-2 rounded d-inline-block tituloCard">
+                <small>SERVICIO DE ALINEACION</small>
+                <i class="fas fa-caret-down ps-3"></i>
+
             </h4>
         </div>
     </div>
-    <div class="container-fluid" data-aos="fade-right">
+
+    <div class="container-fluid" data-aos="fade-right" *ngIf="mostrarImg">
         <div class="row d-flex justify-content-center align-items-center">
 
             <!-- CARDS PARA IMAGENES SERVICIO DE ALINEACION -->

@@ -2,7 +2,7 @@
 
  /* fondo todas el contenedor de las cards*/
  .containerBackG {
-    background: linear-gradient(to bottom right, rgba(169, 169, 169, 0.4), rgba(255, 60, 60, 0.05));
+   /* background: linear-gradient(to bottom right, rgba(169, 169, 169, 0.4), rgba(255, 60, 60, 0.05));*/
     border-radius: 3%;
     overflow-x: hidden; /* evita el desplazamiento de la pantalla hacia la derecha cuando vanc argando las animaciones*/
 }
@@ -25,12 +25,6 @@
     color: #fff;
 }
 
-/* titulo cards*/
-.tituloCard {
-    width: 230px;
-    height: 75px;
-    background: linear-gradient(to bottom right, rgba(169, 169, 169, 0.4), rgba(255, 60, 60, 0.05));
-}
 
 /* Ajuste para que todas las imágenes tengan el mismo tamaño */
 .card img {
@@ -50,6 +44,14 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 1em;
+}
+
+.tituloCard{
+   background-color: #208FD4 !important;
+   background-image: url('/assets/fondos/img4.png');
+   background-size:contain;
+   border-color: #146699 !important;
+   color: white !important;
 }
 
 .text-section {

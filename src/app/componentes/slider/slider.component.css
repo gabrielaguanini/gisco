@@ -1,103 +1,37 @@
-#carouselExampleAutoplaying{
-  background: linear-gradient(to bottom right, rgba(169, 169, 169, 0.4), rgba(255, 60, 60, 0.05));
-  border-radius: 3%;
-}
-
-.carousel-item-container {
-    width: 100%;
-    height: 400px;
-    background-color: #208FD4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .image-text-wrapper {
-    display: flex;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .image-container {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #208FD4;
-  }
-  
-  .image-container img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-  }
-  
-  .text-container {
-    width: 50%;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    min-height: 400px; /* Para que siempre ocupe el mismo espacio */
-  }
-
- 
-  @media (min-width: 1000px) {
-    .carousel-control-prev-icon {
-      transform: scale(0.60);
-    }
-    .carousel-control-next-icon {
-      transform: scale(0.60);
-    }
-    h5{
-        font-size:200%;
-      }
-    p{
-        font-size:90%; 
-    }
-  }
-  
-/* Modal principal */
-.modal {
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  position: fixed; /* Fija el modal en la pantalla */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-  z-index: 1000; /* Asegúrate de que el modal esté por encima de otros elementos */
-}
-
-/* Contenedor del contenido del modal */
-.modal-content {
-  background: linear-gradient(to bottom right, rgba(169, 169, 169, 0.4), #208FD4);
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  width: 700px; /* Ajusta el tamaño según lo necesario */
-  max-width: 90%; /* Asegura que el modal no sea más ancho que el 90% de la pantalla */
-  box-sizing: border-box;
-  z-index: 1010; /* Para que el contenido del modal esté sobre el fondo */
-}
-
-/* Cuerpo del modal */
-.modal-body {
-  background: linear-gradient(to bottom right, rgba(169, 169, 169, 0.4), rgba(255, 60, 60, 0.05));
-  padding: 20px; /* Agregar padding si es necesario */
-  border-radius: 8px;
+a {
+  font-size: large;
+  width: 20%;
+  height: 20%;
 }
 
 
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 30px;
-  cursor: pointer;
+/* =============================================================================================================================  */
+/* =============================================================================================================================  */
+/* =============================================================================================================================  */
+/* =============================================================================================================================  */
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* o contain si querés ver toda la imagen */
 }
 
+/* Para pantallas medianas y grandes (>= 768px): mostrar el carrusel de escritorio, ocultar el de celular */
+@media (min-width: 768px) {
+  .contSLidPc {
+    display: block;
+  }
+  .contSLidCel {
+    display: none;
+  }
+}
+
+/* Para pantallas pequeñas (< 768px): mostrar el carrusel de celular, ocultar el de escritorio */
+@media (max-width: 767.98px) {
+  .contSLidPc {
+    display: none;
+  }
+  .contSLidCel {
+    display: block;
+  }
+}

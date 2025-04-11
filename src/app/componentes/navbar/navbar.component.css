@@ -1,3 +1,46 @@
+/* Aumenta el tamaño del texto de los enlaces del navbar */
 a {
     font-size: large;
+}
+
+/* Asegura que el navbar esté por encima de otros elementos (como slider) */
+.navbar {
+    z-index: 3;
+    background-size: contain;
+}
+
+/* Estilo del botón toggle */
+.navbar-toggler {
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+/* Ícono del botón toggle */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Tamaño iconoces redes sociales*/
+.aIcon {
+    width: 36px;
+    height: 36px;
+}
+
+/* RESPONSIVO */
+
+/* Para pantallas pequeñas */
+@media (max-width: 767.98px) {
+    .containerRedes {
+      display: none !important;
+    }
+}
+
+/* Para pantallas medianas (entre 768px y 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .containerRedes {
+      display: none !important;
+    }
+    .navbar-toggler{
+        margin-right: 10%;
+    }
 }

@@ -22,12 +22,6 @@
     color: #fff;
 }
 
- /* titulo cards*/
- .tituloCard {
-    width: 230px;
-    height: 50px;
-}
-
 /* Ajuste para que todas las imágenes tengan el mismo tamaño */
 .card img {
     width: 100%;
@@ -47,6 +41,15 @@
     justify-content: space-between;
     padding: 1em;
 }
+
+.tituloCard{
+   background-color: #208FD4 !important;
+   background-image: url('/assets/fondos/img4.png');
+   background-size:contain;
+   border-color: #146699 !important;
+   color: white !important;
+}
+
 
 .text-section {
     margin-bottom: 1em;

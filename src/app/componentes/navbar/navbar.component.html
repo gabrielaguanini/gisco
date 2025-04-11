@@ -1,21 +1,61 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
-    <div class="container-fluid">
-      <a class="navbar-brand" [routerLink]="['/home']">
-        <img src="assets/LogoGisco.png" alt="Logo Gisco" class="img-fluid w-75 h-75">
+<!-- Navbar principal con fondo transparente, sin sombra, y posición fija arriba -->
+<nav class="navbar navbar-expand-lg bg-transparent shadow-none position-absolute top-0 start-0 w-100 z-3">
+  <div class="container-fluid">
+
+    <!-- Logo que redirige a la página de inicio -->
+    <a class="navbar-brand" [routerLink]="['/home']">
+      <img src="assets/LogoGisco.png" alt="Logo Gisco" class="img-fluid w-75 h-75">
+    </a>
+
+    <!-- Redes sociales iconos link -->
+    <div class="col-7 d-flex justify-content-center flex-wrap gap-2 containerRedes">
+      <a href="https://www.facebook.com/" target="_blank"
+        class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
+        <i class="fab fa-facebook-f"></i>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" [routerLink]="['/capacitaciones']">Capacitaciones</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-        </ul>
-      </div>
+      <a href="https://x.com/?lang=es" target="_blank"
+        class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://wa.me/5491112345678" target="_blank"
+        class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank"
+        class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="mailto:ejemplo@dominio.com" target="_blank"
+        class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
+        <i class="fas fa-envelope"></i>
+      </a>
     </div>
-  </nav>
+
+
+
+    <!-- Botón hamburguesa para colapsar el menú en pantallas pequeñas -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenido colapsable del navbar (se muestra al hacer clic en el botón) -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <!-- Enlace a Capacitaciones -->
+        <li class="nav-item text-center">
+          <a class="nav-link active text-white" aria-current="page" [routerLink]="['/capacitaciones']">Capacitaciones y
+            Cursos</a>
+        </li>
+        <!-- Enlace a Productos y Servicios -->
+        <li class="nav-item text-center">
+          <a class="nav-link text-white" (click)="scrollTo('about-us')">Productos y Servicios</a>
+        </li>
+        <!-- Enlace a descargas -->
+        <li class="nav-item text-center">
+          <a class="nav-link text-white" (click)="scrollTo('about-us')" [routerLink]="['/descargas']">Descargas</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

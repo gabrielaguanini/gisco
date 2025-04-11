@@ -26,5 +26,27 @@
     border-color: rgba(0, 123, 255, 1);  /* Border color en hover */
 }
 
+/* barras con imagenes */
+.containerEtiq{
+    margin-bottom: -3%;
+}
+
+/* titulo cards container */
+.tituloCardEstilo {    
+    color: white;
+    background-color: #a9a9a9;
+    border: 2px solid #208FD4;
+    padding: 0.5rem 1rem;
+    border-radius: 0.7rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.containerTit{
+    padding-top: 5%;
+}
+
 
 

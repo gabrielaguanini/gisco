@@ -47,6 +47,9 @@
     padding: 0.5rem 1rem;
     border-radius: 0.7rem;
     display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
 }
 
 
@@ -79,12 +82,6 @@
     padding: 0 1rem;
 }
 
-/* Estilo para el título de la sección */
-.tituloCardEstilo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #444;
-}
 
 /* Card general */
 .card {

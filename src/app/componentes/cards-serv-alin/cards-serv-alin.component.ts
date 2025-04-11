@@ -9,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class CardsServAlinComponent {
 
+    // Variable para controlar la visibilidad del contenedor
+    mostrarImg: boolean = false;
+
+
+    // Función para alternar el valor de mostrarContenedor
+    abrirCerrarContenedor() {
+      this.mostrarImg = !this.mostrarImg;
+    }
+  
+  
+  
+  
 }

@@ -1,91 +1,36 @@
-<div id="carouselExampleAutoplaying" class="carousel slide p-5" data-bs-ride="carousel">
-  <div class="carousel-inner justify-content-center">
+<!-- NAVBAR FLOTANTE ARRIBA DE TODO -->
+<app-navbar></app-navbar>
 
-    <div class="carousel-item active">
-      <div class="carousel-item-container">
-        <div class="image-text-wrapper">
-          <!-- Imagen a la izquierda -->
-          <div class="image-container">
-            <img src="assets/slider/slider2.jpeg" alt="Slider 1">
-          </div>
-          <!-- Texto a la derecha -->
-          <div class="text-container m-3">
-            <h5 class="">High Velocity Oxy
-              Fuel System (HVOF)</h5>
-            <p class="">Aplicaciones típicas: aceros inoxidables, bronce,
-              aluminio, metal blanco, zinc. Aplicaciones típicas: aceros inoxidables.</p>
-            <!-- Botón para abrir el modal -->
-            <button type="btn btn-primary" (click)="openModal()" class="btn btn-sm btn-light fw-bold ">ver más</button>
-
-
-            <!-- Modal -->
-            <div class="modal" *ngIf="showModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-
-                  <div class="modal-header justify-content-center">
-                    <h3 class="modal-title" id="exampleModalLabel"><strong>Modal Título</strong></h3>
-                    <button type="button" class="btn btn btn-close" (click)="closeModal()" aria-label="Close">
-
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Este es el contenido del modal...</p>
-                  </div>
-                  <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-light" (click)="closeModal()">Cerrar</button>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-          </div>
-        </div>
+<!-- SLIDER ESCRITORIO -->
+<div class="position-relative contSLidPc">
+  <div class="carousel slide carouselExampleSlidesOnly" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/slider/img1.png" class="img-fluid" alt="Imagen 1">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/slider/img2.png" class="img-fluid" alt="Imagen 2">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/slider/img3.png" class="img-fluid" alt="Imagen 3">
       </div>
     </div>
-
-    <div class="carousel-item">
-      <div class="carousel-item-container">
-        <div class="image-text-wrapper">
-          <div class="image-container">
-            <img src="assets/slider/slider8.jpeg" alt="Slider 2">
-          </div>
-          <div class="text-container">
-            <h2>Prueba de título</h2>
-            <p>Prueba de texto</p>
-            <button type="button" class="btn btn-sm btn-light fw-bold ">ver más</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <div class="carousel-item-container">
-        <div class="image-text-wrapper">
-          <div class="image-container">
-            <img src="assets/slider/slider10.jpeg" alt="Slider 3">
-          </div>
-          <div class="text-container">
-            <h2>Prueba de título</h2>
-            <p>Prueba de texto</p>
-            <button type="button" class="btn btn-sm btn-light fw-bold ">ver más</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
+</div>
 
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+<!-- SLIDER CELULAR -->
+<div class="position-relative contSLidCel">
+  <div class="carousel slide carouselExampleSlidesOnlyCel" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/slider/imgCel1.png" class="img-fluid" alt="Imagen 1">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/slider/imgCel2.png" class="img-fluid" alt="Imagen 2">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/slider/imgCel3.png" class="img-fluid" alt="Imagen 3">
+      </div>
+    </div>
+  </div>
 </div>

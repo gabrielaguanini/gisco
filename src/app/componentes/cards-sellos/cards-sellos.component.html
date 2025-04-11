@@ -1,78 +1,120 @@
 <!-- TITULO -->
 <div class="containerBackG">
-<div class="container-fluid">
-    <div class="text-center my-3 pt-5" data-aos="fade-left">
-        <h4 class="text-secondary fw-bold p-2 bg-light border border-secondary border-1 rounded d-inline-block tituloCard">
-            SELLOS
-        </h4>
+    <div class="container-fluid justify-content-center text-center" (click)="abrirCerrarContenedor()">
+        <div class="text-right my-3 pt-3" data-aos="fade-left">
+            <h4 class="col-10 text-secondary fw-bold p-2 bg-light border border-2 rounded d-inline-block tituloCard">
+                <small>SELLOS</small>
+                <i class="fas fa-caret-down ps-3"></i>
+
+            </h4>
+        </div>
     </div>
-</div>
-<div class="container-fluid" data-aos="fade-right">
-    <div class="row d-flex justify-content-center align-items-center">
 
-        <!-- CARDS PARA IMAGENES DE SELLOS -->
+    <div class="container-fluid" data-aos="fade-right" *ngIf="mostrarImg">
+        <div class="row d-flex justify-content-center align-items-center">
 
-        <!-- IMAGEN SELLOS 1 -->
+            <!-- CARDS PARA IMAGENES DE SELLOS -->
 
-        <div class="col-12 col-sm-6 col-lg-4 mb-4">
-            <div class="card dark">
-                <img src="assets/cards/imgSellos/imgSell1.jpeg" class="card-img-top" alt="imgSell1.jpeg">
-                <div class="card-body">
-                    <div class="text-section">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                    <div class="cta-section">
-                        <!-- Botón para abrir el modal -->
-                        <button type="button" class="btn btn-outline-light btnOpenModal" data-bs-toggle="modal"
-                            data-bs-target="#customModalSell1">
-                            <i class="fas fa-plus"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <!-- IMAGEN SELLOS 1 -->
 
-        <!-- IMAGEN SELLOS 2 -->
-        <div class="col-12 col-sm-6 col-lg-4 mb-4">
-            <div class="card dark">
-                <img src="assets/cards/imgSellos/imgSell2.jpeg" class="card-img-top" alt="imgSell2.jpeg">
-                <div class="card-body">
-                    <div class="text-section">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                    <div class="cta-section">
-
-                        <!-- Botón para abrir el modal -->
-                        <button type="button" class="btn btn-outline-light btnOpenModal" data-bs-toggle="modal"
-                            data-bs-target="#customModalSell2">
-                            <i class="fas fa-plus"></i>
-                        </button>
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="card dark">
+                    <img src="assets/cards/imgSellos/imgSell1.jpeg" class="card-img-top" alt="imgSell1.jpeg">
+                    <div class="card-body">
+                        <div class="text-section">
+                            <h5 class="card-title">Card title</h5>
+                        </div>
+                        <div class="cta-section">
+                            <!-- Botón para abrir el modal -->
+                            <button type="button" class="btn btn-outline-light btnOpenModal" data-bs-toggle="modal"
+                                data-bs-target="#customModalSell1">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- IMAGEN SELLOS 3 -->
-        <div class="col-12 col-sm-6 col-lg-4 mb-4">
-            <div class="card dark">
-                <img src="assets/cards/imgSellos/imgSell3.jpeg" class="card-img-top" alt="imgASell3.jpeg">
-                <div class="card-body">
-                    <div class="text-section">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                    <div class="cta-section">
 
-                        <!-- Botón para abrir el modal -->
-                        <button type="button" class="btn btn-outline-light btnOpenModal" data-bs-toggle="modal"
-                            data-bs-target="#customModalSell3">
-                            <i class="fas fa-plus"></i>
-                        </button>
+            <!-- IMAGEN SELLOS 2 -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="card dark">
+                    <img src="assets/cards/imgSellos/imgSell2.jpeg" class="card-img-top" alt="imgSell2.jpeg">
+                    <div class="card-body">
+                        <div class="text-section">
+                            <h5 class="card-title">Card title</h5>
+                        </div>
+                        <div class="cta-section">
+
+                            <!-- Botón para abrir el modal -->
+                            <button type="button" class="btn btn-outline-light btnOpenModal" data-bs-toggle="modal"
+                                data-bs-target="#customModalSell2">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- IMAGEN SELLOS 3 -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="card dark">
+                    <img src="assets/cards/imgSellos/imgSell3.jpeg" class="card-img-top" alt="imgASell3.jpeg">
+                    <div class="card-body">
+                        <div class="text-section">
+                            <h5 class="card-title">Card title</h5>
+                        </div>
+                        <div class="cta-section">
+
+                            <!-- Botón para abrir el modal -->
+                            <button type="button" class="btn btn-outline-light btnOpenModal" data-bs-toggle="modal"
+                                data-bs-target="#customModalSell3">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IMAGEN SELLOS 4 -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="card dark">
+                    <img src="assets/cards/imgSellos/imgSell4.jpeg" class="card-img-top" alt="imgASell4.jpeg">
+                    <div class="card-body">
+                        <div class="text-section">
+                            <h5 class="card-title">Card title</h5>
+                        </div>
+                        <div class="cta-section">
+
+                            <!-- Botón para abrir el modal -->
+                            <button type="button" class="btn btn-outline-light btnOpenModal" data-bs-toggle="modal"
+                                data-bs-target="#customModalSell4">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- IMAGEN SELLOS 5 -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="card dark">
+                    <img src="assets/cards/imgSellos/imgSell5.jpeg" class="card-img-top" alt="imgASell5.jpeg">
+                    <div class="card-body">
+                        <div class="text-section">
+                            <h5 class="card-title">Card title</h5>
+                        </div>
+                        <div class="cta-section">
+
+                            <!-- Botón para abrir el modal -->
+                            <button type="button" class="btn btn-outline-light btnOpenModal" data-bs-toggle="modal"
+                                data-bs-target="#customModalSell5">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    
     </div>
-</div>
 </div>
 
 <!-- MODALES -->
@@ -98,10 +140,10 @@
             <div class="modal-img">
                 <div class="fixed-size-container">
                     <img src="assets/cards/imgSellos/imgSell1.jpeg"
-                         class="modal-image border border-secondary border-2 rounded">
+                        class="modal-image border border-secondary border-2 rounded">
                 </div>
             </div>
-            
+
             <!-- Cuerpo -->
             <div class="modal-body justify-content-center text-center">
                 modal1 modal1 modal1 modal1 modal1 modal1 modal1 modal1 modal1 modal1 modal1
@@ -196,4 +238,84 @@
         </div>
     </div>
 </div>
+
+<!-- Modal card 4 -->
+<div class="modal fade" id="customModalSell4" tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <!-- Encabezado -->
+            <div class="modal-header">
+                <h5 class="modal-title">Título del Modal Grande</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Icono de enlace centrado-->
+            <div class="containerIcono mx-auto m-3">
+                <a href="assets/cards/imgSellos/imgSell4.jpeg" target="_blank"
+                    class="text-secondary bg-white rounded-circle p-2 shadow">
+                    <i class="fa-solid fa-link" title="Abrir imagen completa"></i>
+                </a>
+            </div>
+            <!-- Imagen -->
+            <div class="modal-img">
+                <div class="fixed-size-container">
+                    <img src="assets/cards/imgSellos/imgSell4.jpeg"
+                        class="modal-image border border-secondary border-2 rounded">
+                </div>
+            </div>
+            <!-- Cuerpo -->
+            <div class="modal-body justify-content-center text-center">
+                Este es un **modal grande** Este es un **modal grande** Este es un **modal
+                grande** Este es un **modal grande** Este es un **modal grande** Este es un
+                **modal grande** Este es un **modal grande**
+            </div>
+
+            <!-- Pie de Modal -->
+            <div class="modal-footer">
+                <button type="button" class="btn modal-close-btn" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal card 5 -->
+<div class="modal fade" id="customModalSell5" tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <!-- Encabezado -->
+            <div class="modal-header">
+                <h5 class="modal-title">Título del Modal Grande</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Icono de enlace centrado-->
+            <div class="containerIcono mx-auto m-3">
+                <a href="assets/cards/imgSellos/imgSell5.jpeg" target="_blank"
+                    class="text-secondary bg-white rounded-circle p-2 shadow">
+                    <i class="fa-solid fa-link" title="Abrir imagen completa"></i>
+                </a>
+            </div>
+            <!-- Imagen -->
+            <div class="modal-img">
+                <div class="fixed-size-container">
+                    <img src="assets/cards/imgSellos/imgSell5.jpeg"
+                        class="modal-image border border-secondary border-2 rounded">
+                </div>
+            </div>
+            <!-- Cuerpo -->
+            <div class="modal-body justify-content-center text-center">
+                Este es un **modal grande** Este es un **modal grande** Este es un **modal
+                grande** Este es un **modal grande** Este es un **modal grande** Este es un
+                **modal grande** Este es un **modal grande**
+            </div>
+
+            <!-- Pie de Modal -->
+            <div class="modal-footer">
+                <button type="button" class="btn modal-close-btn" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 

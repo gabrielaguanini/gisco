@@ -1,7 +1,35 @@
 .containerBackG {
     background-color: white;
+    position: relative;
     overflow-x: hidden; /* evita el desplazamiento de la pantalla hacia la derecha cuando vanc argando las animaciones*/
 }
+ /* quita las reglas css del navbar (en la pantalla principal esta transparente entre otras) */
+.etiqNavbar{
+  position: relative !important;
+  z-index: auto !important;
+ 
+}
+
+
+.etiqNavbar.navbar {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  z-index: auto !important;  
+  
+}
+
+::ng-deep .etiqNavbar nav.navbar {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  z-index: auto !important;
+  background-color: grey !important;
+  background-image: url('/assets/fondos/fondoPresNav.png')!important;
+}
+
 
 .text-petrolero {
     color: #208FD4 !important;
@@ -34,6 +62,9 @@
     list-style: none;
     padding: 0;
     text-transform: uppercase;
+    hyphens: auto;
+  word-break: break-word;
+  overflow-wrap: break-word;
   }
 
 
