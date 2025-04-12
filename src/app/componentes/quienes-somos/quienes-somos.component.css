@@ -6,7 +6,7 @@
 }
 
 .card {
-    background-color: #f3f3f3;
+    background-color: #fff;
     border-radius: 0.7em;
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18);
     border: none;
@@ -15,7 +15,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 1rem;
+    
+    border: 1px solid #ddd;
 }
+
+
 
 
 .card:hover {
@@ -41,15 +46,15 @@
 }
 
 .tituloCardEstilo {
+   background-color: #208FD4;
     color: white;
-    background-color: #a9a9a9;
-    border: 2px solid #208FD4;
-    padding: 0.5rem 1rem;
+    border: 2px solid #186da8;
+    padding: 0.5rem 1.2rem;
     border-radius: 0.7rem;
     display: inline-block;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #444;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -83,12 +88,7 @@
 }
 
 
-/* Card general */
-.card {
-    border-radius: 1rem;
-    background-color: #fff;
-    border: 1px solid #ddd;
-}
+
 
 /* Contenedor de los logos */
 .card .row {

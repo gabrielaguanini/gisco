@@ -16,6 +16,7 @@ import { CardsServAlinComponent } from './componentes/cards-serv-alin/cards-serv
 import { QuienesSomosComponent } from './componentes/quienes-somos/quienes-somos.component';
 import { CapacitacionesComponent } from './componentes/capacitaciones/capacitaciones.component';
 import { DescargasComponent } from './componentes/descargas/descargas.component';
+import { ContainerCardsComponent } from './componentes/container-cards/container-cards.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { DescargasComponent } from './componentes/descargas/descargas.component'
     CardsServAlinComponent,
     QuienesSomosComponent,
     CapacitacionesComponent,
-    DescargasComponent
+    DescargasComponent,
+    ContainerCardsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,56 @@
+<div class="button-grid-container">
+  <div class="button-grid">
+    <!-- Botón para Servicio 1 -->
+    <div class="button butCont1" (click)="abrirCerrarContenedor(1)">
+      <div class="button-content">
+        <i class="fas fa-tag"></i>
+        <span>Servicio 1</span>
+        <i class="fas fa-caret-down"></i>
+      </div>
+    </div>
+
+    <!-- Botón para Servicio 2 -->
+    <div class="button butCont2" (click)="abrirCerrarContenedor(2)">
+      <div class="button-content">
+        <i class="fas fa-tag" id="zzz"></i>
+        <span>Servicio 2</span>
+        <i class="fas fa-caret-down"></i>
+      </div>
+    </div>
+
+    <!-- Mostrar el componente correspondiente a Servicio 1 -->
+    <app-cards *ngIf="mostrarImagenes[0]" id="1"></app-cards>
+
+    <!-- Mostrar el componente correspondiente a Servicio 2 -->
+    <app-cards-sellos *ngIf="mostrarImagenes[1]" id="2"></app-cards-sellos>
+
+    <!-- Botón para Servicio 3 -->
+    <div class="button butCont3" (click)="abrirCerrarContenedor(3)">
+      <div class="button-content">
+        <i class="fas fa-tools"></i>
+        <span>Servicio 3</span>
+        <i class="fas fa-caret-down"></i>
+      </div>
+    </div>
+
+    <!-- Botón para Servicio 4 -->
+    <div class="button butCont4" (click)="abrirCerrarContenedor(4)">
+      <div class="button-content">
+        <i class="fas fa-tools"></i>
+        <span>Servicio 4</span>
+        <i class="fas fa-caret-down"></i>
+      </div>
+    </div>
+
+    <!-- Mostrar el componente correspondiente a Servicio 3 -->
+    <app-card-rep-sell-mec *ngIf="mostrarImagenes[2]" id="3"></app-card-rep-sell-mec>
+
+    <!-- Mostrar el componente correspondiente a Servicio 4 -->
+    <app-cards-serv-alin *ngIf="mostrarImagenes[3]" id="4"></app-cards-serv-alin>
+
+    <!-- Logo centrado -->
+    <div class="logo-center">
+      <img src="/assets/logoGisco2.png" alt="Logo Gisco" class="logo-img">
+    </div>
+  </div>
+</div>
