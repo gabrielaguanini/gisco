@@ -33,9 +33,14 @@
 
 /* titulo cards container */
 .tituloCardEstilo {    
-    background-color: #208FD4;
+    background: #208FD4;
+
     color: white;
-    border: 2px solid #186da8;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #E31505; ;
+    border-left: 1px solid #E31505;
+
     padding: 0.5rem 1.2rem;
     border-radius: 0.7rem;
     display: inline-block;

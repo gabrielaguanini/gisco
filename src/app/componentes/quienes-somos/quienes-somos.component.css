@@ -32,6 +32,11 @@
     display: flex;
 }
 
+.imgLogoEscudo{
+    width: 70px;
+    height: 70px;
+}
+
 .icon-section {
     color: #208FD4;
 }
@@ -46,9 +51,14 @@
 }
 
 .tituloCardEstilo {
-   background-color: #208FD4;
+    background: #208FD4;
+
     color: white;
-    border: 2px solid #186da8;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #E31505; ;
+    border-left: 1px solid #E31505;
+
     padding: 0.5rem 1.2rem;
     border-radius: 0.7rem;
     display: inline-block;
@@ -69,15 +79,6 @@
     color: #208FD4;
 }
 
-.tituloInternoCard {
-    background-color: #d3d3d3;
-    color: white;
-    border: 2px solid #208FD4;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 0.7rem;
-    font-weight: bold;
-}
 
 .textoQuienesSomos {
     font-size: 1.2rem;

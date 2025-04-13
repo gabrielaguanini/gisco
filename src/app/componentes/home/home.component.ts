@@ -9,7 +9,7 @@ import AOS from 'aos';
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
-  showCards: boolean = false;  // variable para controlar la visibilidad de app-cards
+
   constructor() { }
 
   ngOnInit(): void {
@@ -19,16 +19,9 @@ export class HomeComponent implements OnInit {
       once: true  // Ejecutar la animación solo una vez
     });
 
-    this.delayShowCards(2500);
+  
   }
 
-   // FUNCIONES
 
-  // Función para retrasar la aparición de app-cards
-  delayShowCards(delayTime: number): void {
-    setTimeout(() => {
-      this.showCards = true;  
-    }, delayTime);
-  }
 
 }

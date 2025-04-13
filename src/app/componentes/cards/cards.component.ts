@@ -8,15 +8,4 @@ import { Component } from '@angular/core';
   styleUrl: './cards.component.css'
 })
 export class CardsComponent {
-
-  // Variable para controlar la visibilidad del contenedor
-  mostrarImg: boolean = false;
-
-
-  // Función para alternar el valor de mostrarContenedor
-  abrirCerrarContenedor() {
-    this.mostrarImg = !this.mostrarImg;
-  }
-
-
 }

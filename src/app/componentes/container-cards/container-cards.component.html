@@ -1,56 +1,83 @@
-<div class="button-grid-container">
-  <div class="button-grid">
-    <!-- Botón para Servicio 1 -->
-    <div class="button butCont1" (click)="abrirCerrarContenedor(1)">
-      <div class="button-content">
-        <i class="fas fa-tag"></i>
-        <span>Servicio 1</span>
-        <i class="fas fa-caret-down"></i>
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12 button-grid-container" >
+      <div class="button-grid" id="buttonGrid" #buttonGrid>
+        <!-- Botón para card 1 -->
+        <div class="button butCont1" (click)="openCloseCards(1); reducirTaman(); scrollTo('idCard1')">
+          <div class="button-content">
+            <i class="fas fa-tag"></i>
+            <span>Acoplamientos</span>
+            <i class="fas fa-caret-down"></i>
+          </div>
+        </div>
+
+        <!-- Botón para card 2 -->
+        <div class="button butCont2" (click)="openCloseCards(2); reducirTaman(); scrollTo('idCard2')">
+          <div class="button-content">
+            <i class="fas fa-tag"></i>
+            <span>Sellos</span>
+            <i class="fas fa-caret-down"></i>
+          </div>
+        </div>
+
+
+
+        <!-- Botón para card 3 -->
+        <div class="button butCont3" (click)="openCloseCards(3); reducirTaman(); scrollTo('idCard3')">
+          <div class="button-content">
+            <i class="fas fa-tools"></i>
+            <span>Reparación de Sellos</span>
+            <i class="fas fa-caret-down"></i>
+          </div>
+        </div>
+
+        <!-- Botón para card 4 -->
+        <div class="button butCont4" (click)="openCloseCards(4); reducirTaman(); scrollTo('idCard4')">
+          <div class="button-content">
+            <i class="fas fa-tools"></i>
+            <span>Alineacion</span>
+            <i class="fas fa-caret-down"></i>
+          </div>
+        </div>
+
+
+
+        <!-- Logo gisco centrado -->
+        <div class="logo-center">
+          <img src="/assets/logoGisco2.png" alt="Logo Gisco" class="logo-img">
+        </div>
       </div>
     </div>
 
-    <!-- Botón para Servicio 2 -->
-    <div class="button butCont2" (click)="abrirCerrarContenedor(2)">
-      <div class="button-content">
-        <i class="fas fa-tag" id="zzz"></i>
-        <span>Servicio 2</span>
-        <i class="fas fa-caret-down"></i>
-      </div>
-    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+      <!-- Card 1 -->
+      <div class="closeCard btn-close border border-2 border-secondary
+     ms-auto  text-center" aria-label="Close" (click)="closeCard(1); volverTamOriginal(); scrollTo('buttonGrid')" *ngIf="cardOpCl1"></div>
+      <!-- close button -->
+      <!-- componente card 1 -->
+      <app-cards id="idCard1" *ngIf="cardOpCl1"></app-cards>
 
-    <!-- Mostrar el componente correspondiente a Servicio 1 -->
-    <app-cards *ngIf="mostrarImagenes[0]" id="1"></app-cards>
+      <!-- Card 2 -->
+      <div class="closeCard btn-close border border-2 border-secondary
+    ms-auto  text-center" aria-label="Close" (click)="closeCard(2); volverTamOriginal(); scrollTo('buttonGrid')" *ngIf="cardOpCl2"></div>
+      <!-- close button -->
+      <!-- componente card 2 -->
+      <app-cards-sellos id="idCard2" *ngIf="cardOpCl2"></app-cards-sellos>
 
-    <!-- Mostrar el componente correspondiente a Servicio 2 -->
-    <app-cards-sellos *ngIf="mostrarImagenes[1]" id="2"></app-cards-sellos>
+      <!-- Card 3 -->
+      <div class="closeCard btn-close border border-2 border-secondary
+    ms-auto text-center" aria-label="Close" (click)="closeCard(3); volverTamOriginal(); scrollTo('buttonGrid')" *ngIf="cardOpCl3"></div>
+      <!-- close button -->
+      <!-- componente card 3 -->
+      <app-card-rep-sell-mec id="idCard3" *ngIf="cardOpCl3"></app-card-rep-sell-mec>
 
-    <!-- Botón para Servicio 3 -->
-    <div class="button butCont3" (click)="abrirCerrarContenedor(3)">
-      <div class="button-content">
-        <i class="fas fa-tools"></i>
-        <span>Servicio 3</span>
-        <i class="fas fa-caret-down"></i>
-      </div>
-    </div>
-
-    <!-- Botón para Servicio 4 -->
-    <div class="button butCont4" (click)="abrirCerrarContenedor(4)">
-      <div class="button-content">
-        <i class="fas fa-tools"></i>
-        <span>Servicio 4</span>
-        <i class="fas fa-caret-down"></i>
-      </div>
-    </div>
-
-    <!-- Mostrar el componente correspondiente a Servicio 3 -->
-    <app-card-rep-sell-mec *ngIf="mostrarImagenes[2]" id="3"></app-card-rep-sell-mec>
-
-    <!-- Mostrar el componente correspondiente a Servicio 4 -->
-    <app-cards-serv-alin *ngIf="mostrarImagenes[3]" id="4"></app-cards-serv-alin>
-
-    <!-- Logo centrado -->
-    <div class="logo-center">
-      <img src="/assets/logoGisco2.png" alt="Logo Gisco" class="logo-img">
+      <!-- Card 4 -->
+      <div class="closeCard btn-close border border-2 border-secondary
+    ms-auto text-center" aria-label="Close" (click)="closeCard(4); volverTamOriginal(); scrollTo('buttonGrid')" *ngIf="cardOpCl4"></div>
+      <!-- close button -->
+      <!-- componente card 4 -->
+      <app-cards-serv-alin id="idCard4" *ngIf="cardOpCl4"></app-cards-serv-alin>
     </div>
   </div>
 </div>

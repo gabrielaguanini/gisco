@@ -9,13 +9,4 @@ import { Component } from '@angular/core';
 })
 export class CardRepSellMecComponent {
 
-  // Variable para controlar la visibilidad del contenedor
-  mostrarImg: boolean = false;
-
-
-  // Función para alternar el valor de mostrarContenedor
-  abrirCerrarContenedor() {
-    this.mostrarImg = !this.mostrarImg;
-  }
-
 }

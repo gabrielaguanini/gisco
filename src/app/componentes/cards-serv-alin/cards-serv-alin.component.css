@@ -48,11 +48,12 @@
  }
 
  .tituloCard {
-     background-color: #208FD4 !important;
-     background-image: url('/assets/fondos/img4.png');
-     background-size: contain;
-     border-color: #146699 !important;
-     color: white !important;
+     border-top: none;
+     border-right: none;
+     border-bottom: 2px dotted #208FD4;
+     border-left: 2px dotted #208FD4;
+     color: #208FD4 !important;
+
  }
 
  .text-section {
