@@ -113,12 +113,21 @@
 
 /* RESPONSIVO */
 
-/* ancho de cards para pantalals grandes*/
+/* ancho de cards para pantallas grandes*/
 @media (min-width: 992px) {
     .custom-row>div {
         max-width: 1000px;
     }
 }
+
+/* pantallas medianas y lanscape*/
+
+@media (min-width: 481px) and (max-width: 1024px) and (orientation: landscape) {
+    .contEmprLog{
+        padding: 4rem;
+    }
+  }
+  
 
 /* tamaño de la fuente del titulo y texto de las cards de servicios para pantallas pequeñas*/
 @media (max-width: 576px) {
@@ -128,4 +137,5 @@
     .textoCardServ{
         font-size: 0.7rem; 
     }
+
   }

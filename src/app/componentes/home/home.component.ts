@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import AOS from 'aos';  
 
 @Component({
@@ -19,9 +19,7 @@ export class HomeComponent implements OnInit {
       once: true  // Ejecutar la animación solo una vez
     });
 
-  
+    
   }
-
-
 
 }

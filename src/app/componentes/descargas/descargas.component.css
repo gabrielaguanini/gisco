@@ -34,11 +34,47 @@
 
 
  .bg-petrolero {
-   background-color: #208FD4 !important;
+  background-color: #208FD4 !important;
+
+  color: white;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #E31505; ;
+  border-left: 1px solid #E31505;
+
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.7rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ .bg-petrolero2 {
+  background-color: #208FD4 !important;
+
+  color: white;
+  border: 3px solid #208FD4 ; ;
+  
+
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.7rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
  }
 
  .text-petrolero {
-   color: #208FD4 !important;
+  color: #208FD4 !important;
+
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #E31505; ;
+  border-left: 1px solid #E31505;
+  border-radius: 20%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
  }
 
  .parrafoCurDesc {

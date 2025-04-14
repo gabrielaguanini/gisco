@@ -18,10 +18,7 @@ export class LoadingComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.preloadImage.src = 'assets/images/fondo-pesado.jpg'; // Cambiá esto por la URL real de tu background
-    this.preloadImage.onload = () => {
-      this.backgroundLoaded = true;
-    };
+
 
 
     setTimeout(() => {
