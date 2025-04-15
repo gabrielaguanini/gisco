@@ -35,7 +35,10 @@
      z-index: 2;
  }
 
-
+ .card-title {
+     max-width: 300px;
+     min-height: 50px;
+ }
 
  .card-body {
      display: flex;
@@ -145,56 +148,7 @@
 
 
  /* RESPONSIVO */
-
- @media screen and (max-width: 475px) {
-     .card {
-         font-size: 0.9em;
-     }
-
-     .card-title {
-         font-size: medium;
-     }
-
-     .btnOpenModal {
-         font-size: small;
-     }
- }
-
- @media screen and (min-width: 768px) {
-     .card-body {
-         flex-direction: row;
-     }
-
-     .text-section {
-         max-width: 60%;
-     }
-
-     .cta-section {
-         max-width: 40%;
-     }
-
-
- }
-
- /* Ubica en la misma linea el titulo de las cards y el button + en pantallas medianas y pequeñas */
- @media screen and (max-width: 768px) {
-     .card-body {
-         display: flex;
-         flex-direction: row;
-         justify-content: space-between;
-         align-items: center;
-         flex-wrap: wrap;
-     }
-
-     .text-section {
-         flex: 1 1 auto;
-     }
-
-     .cta-section {
-         flex: 0 0 auto;
-         margin-left: 10px;
-     }
- }
+ 
 
  /* Para lanscape o cel volteado, le da padding para que la barra de navegacion de android no tape parte de la pantalla */
  @media screen and (max-height: 450px) and (max-width: 950px) {
