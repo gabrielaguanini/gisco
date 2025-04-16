@@ -132,6 +132,20 @@
   .footer-modern {
     background-image: url('/assets/fondos/fondoPresFootPantMed.png');
   }
+
+  .footer-link {
+    display: block;
+  }
+
+  .footer-title::after {
+    display: none
+  }
+
+  .footer-title:hover::after {
+    display: none
+  }
+
+ 
 }
 
 /* Pantallas medianas como tablets y laptops pequeñas */
@@ -139,6 +153,19 @@
   .footer-modern {
     background-image: url('/assets/fondos/fondoPresFootPantMed.png');
   }
+
+  .footer-link {
+    display: block;
+  }
+
+  .footer-title::after {
+    display: none
+  }
+
+  .footer-title:hover::after {
+    display: none
+  }
+
 }
 
 
@@ -186,3 +213,4 @@
 .crt-flicker {
   animation: crtFlicker 1.8s infinite;
 }
+

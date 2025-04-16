@@ -1,14 +1,15 @@
 .loading-container {
   position: relative;
-  height: 100vh;
   width: 100%;
+  min-height: 100vh; /* Asegura que la altura mínima sea 100% */
   background: url('/assets/fondos/fondoPres.png') no-repeat center center;
-  background-size: cover;
+  background-size: cover; /* Cubre todo el contenedor sin recortes */
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
+
 
 .background-overlay {
   position: absolute;
@@ -118,4 +119,33 @@
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+
+/* Responsivo */
+
+ /* Landscape hasta pantallas medianas */
+@media (min-width: 480px) and (max-width: 1024px) { 
+
+  .loading-container {
+    background: url('/assets/fondos/fondoPresMed.png') no-repeat center center;
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+  }
+}
+
+  /* Pantallas XS (celulares verticales) */
+@media (max-width: 479px) {
+
+  .loading-container {
+    background: url('/assets/fondos/fondoPresCel.png') no-repeat center center;
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    width:fit-content;
+    height: fit-content; 
+    padding: 0 10px; 
+  }
+  
 }

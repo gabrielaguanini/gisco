@@ -24,6 +24,7 @@
    z-index: auto !important;
    background-color: grey !important;
    background-image: url('/assets/fondos/fondoPresNav.png') !important;
+   background-size: cover;
  }
 
  /* quita el item de la lista del navbar con id idItemNoMostrar */
