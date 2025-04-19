@@ -175,6 +175,12 @@
   }
 }
 
+/* Teléfonos en horizontal (landscape) */
+@media (max-width: 1500px) and (max-height: 430px) {
 
+  .closeCard{
+    margin-right: 6%;
+  }
+}
 
 

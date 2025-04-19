@@ -4,50 +4,58 @@
 
     <!-- Logo que redirige a la página de inicio -->
     <a class="navbar-brand me-3 logoNAv" [routerLink]="['/home']">
-      <img src="assets/LogoGisco.png" alt="Logo Gisco" class="img-fluid w-75 h-75">
+      <img src="assets/LogoGisco.png" alt="Logo Gisco" class="img-fluid w-75 h-75" data-aos="fade-up"
+        data-aos-delay="800" data-aos-duration="3200">
     </a>
 
     <!-- Iconos sociales centrados (solo visibles en lg y mayor) -->
     <div class="d-none d-lg-flex flex-grow-1 justify-content-center gap-2 containerRedes">
-      <a href="https://www.facebook.com/" target="_blank"
+      <a href="https://www.facebook.com/" target="_blank" data-aos="fade-up" data-aos-delay="200"
+        data-aos-duration="4200"
         class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
         <i class="fab fa-facebook-f"></i>
       </a>
-      <a href="https://x.com/?lang=es" target="_blank"
+      <a href="https://x.com/?lang=es" target="_blank" data-aos="fade-up" data-aos-delay="400" data-aos-duration="4200"
         class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
         <i class="fab fa-twitter"></i>
       </a>
-      <a href="https://wa.me/5491112345678" target="_blank"
+      <a href="https://wa.me/5491112345678" target="_blank" data-aos="fade-up" data-aos-delay="600"
+        data-aos-duration="4200"
         class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
         <i class="fab fa-whatsapp"></i>
       </a>
-      <a href="https://www.instagram.com/" target="_blank"
+      <a href="https://www.instagram.com/" target="_blank" data-aos="fade-up" data-aos-delay="800"
+        data-aos-duration="4200"
         class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
         <i class="fab fa-instagram"></i>
       </a>
-      <a href="mailto:ejemplo@dominio.com" target="_blank"
+      <a href="mailto:ejemplo@dominio.com" target="_blank" data-aos="fade-up" data-aos-delay="1000"
+        data-aos-duration="4200"
         class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
         <i class="fas fa-envelope"></i>
       </a>
     </div>
 
     <!-- Botón hamburguesa para colapsar el menú en pantallas pequeñas -->
-     <div class="contaBtnHamb">
-    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
+    <div class="contaBtnHamb">
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation" data-aos="fade-up" data-aos-delay="800" data-aos-duration="3200">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
 
-    <!-- Contenido colapsable del navbar -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <!-- Contenido y colapsable del navbar -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" data-aos="fade-up"
+      data-aos-delay="800" data-aos-duration="3200">
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item text-center">
-          <a class="nav-link active text-white" aria-current="page" [routerLink]="['/capacitaciones']">Capacitaciones</a>
+          <a class="nav-link active text-white" aria-current="page"
+            [routerLink]="['/capacitaciones']">Capacitaciones</a>
         </li>
         <li class="nav-item text-center" id="idItemNoMostrar">
-          <a class="nav-link text-white nowrap" href="#" (click)="scrollTo('idSecProdySer'); $event.preventDefault()">Productos y Servicios</a>
+          <a class="nav-link text-white nowrap" href="#"
+            (click)="scrollTo('idSecProdySer'); $event.preventDefault()">Productos y Servicios</a>
         </li>
         <li class="nav-item text-center">
           <a class="nav-link text-white" [routerLink]="['/descargas']">Descargas</a>

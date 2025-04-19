@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import Aos from 'aos';
 
 
 @Component({
@@ -12,12 +13,19 @@ export class NavbarComponent {
 
   constructor() { }
 
+  ngAfterViewInit(): void {
+    Aos.init({
+      mirror: false // no repetir en scroll inverso
+    });
+  }
+
+  //FUNCIONES
   scrollTo(anchor: string): void {
     const element = document.getElementById(anchor);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
-  
+
 
 }

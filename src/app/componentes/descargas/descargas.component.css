@@ -1,46 +1,45 @@
+/* quita las reglas css del navbar (en la pantalla principal esta transparente entre otras) */
+.etiqNavbar {
+  position: relative !important;
+  z-index: auto !important;
 
- /* quita las reglas css del navbar (en la pantalla principal esta transparente entre otras) */
- .etiqNavbar {
-   position: relative !important;
-   z-index: auto !important;
+}
 
- }
+.etiqNavbar.navbar {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  z-index: auto !important;
 
- .etiqNavbar.navbar {
-   position: static !important;
-   top: auto !important;
-   left: auto !important;
-   right: auto !important;
-   z-index: auto !important;
+}
 
- }
+/* quita las reglas css del navbar (en la pantalla principal esta transparente) */
+::ng-deep .etiqNavbar nav.navbar {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  z-index: auto !important;
+  background-color: grey !important;
+  background-image: url('/assets/fondos/fondoNavComun.png') !important;
+  background-size: cover;
+}
 
- /* quita las reglas css del navbar (en la pantalla principal esta transparente) */
- ::ng-deep .etiqNavbar nav.navbar {
-   position: static !important;
-   top: auto !important;
-   left: auto !important;
-   right: auto !important;
-   z-index: auto !important;
-   background-color: grey !important;
-   background-image: url('/assets/fondos/fondoPresNav.png') !important;
-   background-size: cover;
- }
-
- /* quita el item de la lista del navbar con id idItemNoMostrar */
- ::ng-deep #idItemNoMostrar {
-   display: none;
- }
-
+/* quita el item de la lista del navbar con id idItemNoMostrar */
+::ng-deep #idItemNoMostrar {
+  display: none;
+}
 
 
- .bg-petrolero {
+
+.bg-petrolero {
   background-color: #208FD4 !important;
 
   color: white;
   border-top: none;
   border-right: none;
-  border-bottom: 1px solid #E31505; ;
+  border-bottom: 1px solid #E31505;
   border-left: 1px solid #E31505;
 
   padding: 0.5rem 1.2rem;
@@ -49,67 +48,84 @@
   font-size: 1.5rem;
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
- }
+}
 
- 
- .bg-petrolero2 {
+.card-header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */
+}
+
+.bg-petrolero2 {
   background-color: #208FD4 !important;
-
+  height: 80px;
   color: white;
-  border: 3px solid #208FD4 ; ;
-  
-
+  border: 3px solid #208FD4;
   padding: 0.5rem 1.2rem;
   border-radius: 0.7rem;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
- }
+}
 
- .text-petrolero {
+.text-petrolero {
   color: #208FD4 !important;
-
   border-top: none;
   border-right: none;
-  border-bottom: 1px solid #E31505; ;
+  border-bottom: 1px solid #E31505;
   border-left: 1px solid #E31505;
   border-radius: 20%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
- }
+}
 
- .parrafoCurDesc {
-   min-height: 100px;
-   /* Asegura alineación visual en las cards */
- }
+.parrafoCurDesc {
+  min-height: 100px;
+  text-align: center;
 
- /* Card hover efecto suave */
- .card:hover {
-   transform: translateY(-5px);
-   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-   transition: all 0.3s ease-in-out;
- }
+}
 
- .card {
-   transition: all 0.3s ease-in-out;
- }
+/* Card hover efecto suave */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
 
- /* Botones outline con colores personalizados */
- .btn-outline-primary {
-   border-color: #208FD4;
-   color: #208FD4;
- }
+.card {
+  transition: all 0.3s ease-in-out;
+}
 
- .btn-outline-primary:hover {
-   background-color: #208FD4;
-   color: white;
- }
+/* Botones outline con colores personalizados */
+.btn-outline-primary {
+  border-color: #208FD4;
+  color: #208FD4;
+}
 
-  /* Para lanscape o cel volteado, le da padding para que la barra de navegacion de android no tape parte de la pantalla */
-  @media screen and (max-height: 450px) and (max-width: 950px) {
-    .containerBackG {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
+.btn-outline-primary:hover {
+  background-color: #208FD4;
+  color: white;
+}
+
+/* Teléfonos en horizontal (landscape), le da padding para que la barra de navegacion de android no tape parte de la pantalla */
+
+@media (max-width: 1500px) and (max-height: 430px) {
+  .containerBackG {
+    padding-left: 50px;
+    padding-right: 50px;
   }
-  
+
+  .card {
+    zoom: 0.7;
+  }
+}
+
+/* Teléfonos en vertical (portrait) */
+@media (max-width: 430px) and (max-height: 1500px) {
+  .card {
+    zoom: 0.8;
+  }
+}

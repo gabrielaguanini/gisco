@@ -1,5 +1,5 @@
-<div data-aos="fade-up" data-aos-duration="2000"> <!-- animación de inicio de componente -->
- 
+<!-- componente slider -->
+<div>
   <app-slider></app-slider>
 </div>
 <!-- boton whatsapp 
@@ -8,22 +8,25 @@
 </a>-->
 <!-- componente quienes somos -->
 <div class="containerEtiq">
-  <app-quienes-somos></app-quienes-somos> <!-- AQUI NO HAY animacion de inicio de componente, intefiere con el modal de las cards-->
+  <app-quienes-somos></app-quienes-somos>
+  <!-- AQUI NO HAY animacion de inicio de componente, intefiere con el modal de las cards-->
 </div>
 
-    <!-- TITULOS CARDS PRODUCTOS Y SERVICIOS -->
-    <div class="container-fluid" id="idSecProdySer" > <!-- Este id responde a un funcion tipo ancla en el componente navbar (click)="scrollTo('idSecProdySer')-->
-      <div class="text-center containerTit" data-aos="fade-up">
-          <h4 class="tituloCardEstilo" data-aos="fade-up">
-              PRODUCTOS Y SERVICIOS
-          </h4>
-      </div>
+<!-- TITULOS CARDS PRODUCTOS Y SERVICIOS -->
+<div class="container-fluid" id="idSecProdySer">
+  <!-- Este id responde a un funcion tipo ancla en el componente navbar (click)="scrollTo('idSecProdySer')-->
+  <div class="text-center containerTit">
+    <h4 class="tituloCardEstilo">
+      PRODUCTOS Y SERVICIOS
+    </h4>
   </div>
-  
+</div>
+
 <!-- componente container cards -->
-  <app-container-cards></app-container-cards>
- 
-<div data-aos="fade-up" data-aos-duration="2000"> <!-- animacion de inicio de componente -->
+<app-container-cards></app-container-cards>
+
+<!-- componente videos -->
+<div> 
   <app-videos></app-videos>
   <app-footer></app-footer>
 </div>
