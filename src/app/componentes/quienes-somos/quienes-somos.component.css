@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-content: space-between;
     border-radius: 1rem;
-    
+
     border: 1px solid #ddd;
 }
 
@@ -32,7 +32,7 @@
     display: flex;
 }
 
-.imgLogoEscudo{
+.imgLogoEscudo {
     width: 70px;
     height: 70px;
 }
@@ -56,7 +56,8 @@
     color: white;
     border-top: none;
     border-right: none;
-    border-bottom: 1px solid #E31505; ;
+    border-bottom: 1px solid #E31505;
+    ;
     border-left: 1px solid #E31505;
 
     padding: 0.5rem 1.2rem;
@@ -111,6 +112,26 @@
 }
 
 
+
+/* ANIMACION SECCION QUIENES SOMOS */
+/* Es unica, las demas secciones usan AOS xq AOS aqui en pantallas SM activa la animacion al iniciar el componente*/
+
+.fade-in-up {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 1.5s ease, opacity 1.5s ease;
+  }
+  
+  .oculto-scroll {
+    opacity: 0;
+    transform: translateY(100px); /* igual que AOS fade-up */
+  }
+  
+
+
+
+
+
 /* RESPONSIVO */
 
 /* ancho de cards para pantallas grandes*/
@@ -120,22 +141,28 @@
     }
 }
 
-/* pantallas medianas y lanscape*/
-
-@media (min-width: 481px) and (max-width: 1024px) and (orientation: landscape) {
-    .contEmprLog{
+/* pantallas medianas */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contEmprLog {
         padding: 4rem;
     }
-  }
-  
+}
 
-/* tamaño de la fuente del titulo y texto de las cards de servicios para pantallas pequeñas*/
-@media (max-width: 576px) {
+/* Teléfonos en horizontal (landscape) */
+@media (max-width: 1500px) and (max-height: 430px) {
+    .contEmprLog {
+        padding: 4rem;
+    }
+}
+
+
+/* teléfonos en vertical (portrait) Tamaño de la fuente del titulo y texto de las cards de servicios para */
+@media (max-width: 430px) and (max-height: 1500px) {
     .titulo-responsive {
-      font-size: 0.9rem; 
-    }
-    .textoCardServ{
-        font-size: 0.7rem; 
+        font-size: 0.9rem;
     }
 
-  }
+    .textoCardServ {
+        font-size: 0.7rem;
+    }
+}

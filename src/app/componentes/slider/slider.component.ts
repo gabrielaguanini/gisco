@@ -15,25 +15,25 @@ declare var bootstrap: any;
 export class SliderComponent {
   @ViewChild('carouselDesktop', { static: false }) carouselDesktop!: ElementRef;
   @ViewChild('carouselMobile', { static: false }) carouselMobile!: ElementRef;
-  
+
   carouselInstanceDesktop: any;
   carouselInstanceMobile: any;
-  
+
   ngAfterViewInit(): void {
     this.iniciarCarousels();
 
-     Aos.init({
-        mirror: false, // no repetir en scroll inverso
-        once: true
-      });
-  
+    Aos.init({
+      mirror: false, // no repetir en scroll inverso
+      once: true
+    });
+
     setTimeout(() => {
       Aos.refresh(); // refresca por si algo cargó después
     }, 1000);
   }
 
   //FUNCIONES
-  
+
   iniciarCarousels(): void {
     setTimeout(() => {
       if (this.carouselDesktop) {
@@ -50,16 +50,19 @@ export class SliderComponent {
       }
     }, 500);
   }
-  
+
   //para pantallas tactiles
+
+  stopCarousel(): void {
+    this.carouselInstanceMobile?.pause();
+  }
   
-  playCarousel(event?: TouchEvent): void {
-    event?.preventDefault();
+  playCarousel(): void {
     this.carouselInstanceMobile?.cycle();
   }
   
-  stopCarousel(event?: TouchEvent): void {
-    event?.preventDefault();
-    this.carouselInstanceMobile?.pause();
+  disableContextMenu(event: MouseEvent): void {
+    event.preventDefault(); // solo evita clic derecho o long press
   }
+  
 }

@@ -3,7 +3,8 @@
 
 <!-- SLIDER ESCRITORIO -->
 <div class="position-relative contSLidPc" data-aos="slide-left" data-aos-delay="800" data-aos-duration="2200">
-  <div class="carousel slide carouselExampleSlidesOnly" data-bs-ride="carousel" #carouselDesktop>
+  <div class="carousel slide carouselExampleSlidesOnly" data-bs-ride="carousel" #carouselDesktop   
+       (touchstart)="stopCarousel()" (touchend)="playCarousel()" (contextmenu)="disableContextMenu($event)">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="assets/slider/img1.png" class="img-fluid" alt="Imagen 1">
@@ -21,7 +22,7 @@
 <!-- SLIDER CELULAR -->
 <div class="position-relative contSLidCel" data-aos="slide-left" data-aos-delay="800" data-aos-duration="2200">
   <div class="carousel slide carouselExampleSlidesOnlyCel" data-bs-ride="carousel" #carouselMobile
-    (touchstart)="stopCarousel($event)" (touchend)="playCarousel($event)">
+    (touchstart)="stopCarousel()" (touchend)="playCarousel()" (contextmenu)="disableContextMenu($event)">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="assets/slider/imgCel1.png" class="img-fluid" alt="Imagen 1">
