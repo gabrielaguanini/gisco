@@ -13,12 +13,12 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+   // Pequeño timeout para que AOS se inicialice después de que la vista se haya cargado
+   setTimeout(() => {
     AOS.init({
-      duration: 2000,  // Duración de la animación
-      easing: 'ease-in-out',  // Efecto de aceleración
-      once: true  // Ejecutar la animación solo una vez
+      once: true, 
     });
-
+  }, 200); // también podés probar 200 o 300 si hace falta
     
   }
 

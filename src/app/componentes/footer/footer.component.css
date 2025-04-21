@@ -4,32 +4,35 @@
   padding: 4rem 1rem 2rem;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
-
+  overflow-y: hidden;
 
 }
 
 
 .footer-title {
+  text-align: center;
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1rem;
   color: #fff;
   position: relative;
+  display: inline-block;
+
 }
 
 .footer-title::after {
   content: "";
-  width: 45%;
-  height: 0.5px;
+  width: 100%;
+  height: 1px;
   background: #E31505;
   display: block;
   margin-top: 8px;
   border-radius: 1px;
-  transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out
 }
 
 .footer-title:hover::after {
-  width: 80%;
+  width: 50%;
   /* se agranda al pasar el mouse */
 }
 
@@ -103,73 +106,46 @@
   }
 }
 
-/* Responsivo */
+/* RESPONSIVO */
 
-/* pantallas pequeñas */
-@media (max-width: 768px) {
+/* Teléfonos en vertical (portrait) */
+@media (max-width: 430px) and (max-height: 1500px) {
   .footer-modern {
     text-align: center;
     background-image: url('/assets/fondos/fondoCel.png');
   }
 
-  .footer-link {
-    display: block;
+  .conRedes {
+    zoom: 0.8;
   }
 
-  .footer-title::after {
-    display: none
+  .contDerRes{
+    zoom: 0.7;
   }
-
-  .footer-title:hover::after {
-    display: none
-  }
-
-
 }
 
 /* Smartphones en landscape */
-@media (min-width: 480px) and (max-width: 767px) and (max-height: 500px) {
+@media (max-width: 1500px) and (max-height: 430px) {
   .footer-modern {
     background-image: url('/assets/fondos/fondoPresFootPantMed.png');
   }
-
-  .footer-link {
-    display: block;
-  }
-
-  .footer-title::after {
-    display: none
-  }
-
-  .footer-title:hover::after {
-    display: none
-  }
-
- 
 }
 
-/* Pantallas medianas como tablets y laptops pequeñas */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* Tablets de 7 pulgadas a 10 pulgadas en portrait */
+@media (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) and (max-height: 1024px) {
+  .footer-modern {
+    background-image: url('/assets/fondos/fondoCel.png');
+  }
+}
+
+/* Tablets de 7 pulgadas a 10 pulgadas en landscape */
+@media (min-width: 600px) and (max-width: 1024px) and (orientation: landscape) and (max-height: 800px) {
   .footer-modern {
     background-image: url('/assets/fondos/fondoPresFootPantMed.png');
   }
-
-  .footer-link {
-    display: block;
-  }
-
-  .footer-title::after {
-    display: none
-  }
-
-  .footer-title:hover::after {
-    display: none
-  }
-
 }
 
-
-/* Footer WebMaster aninmacion */
+/* FOOTER WEB MASTER ANIMACION */
 /* aninmacion */
 @keyframes crtFlicker {
 
@@ -213,4 +189,3 @@
 .crt-flicker {
   animation: crtFlicker 1.8s infinite;
 }
-

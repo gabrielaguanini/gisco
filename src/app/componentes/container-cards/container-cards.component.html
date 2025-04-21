@@ -1,20 +1,24 @@
-
 <div class="container-fluid">
-<!-- Espacio entre secciones, se agrega para no interferir con animaciones aos 
+  <!-- Espacio entre secciones con lineas para pantallas lg, se agrega para no interferir con animaciones aos 
     (sin este espacio las secciones estan demasiado cerca y se activan al tiempo
      que se anima la seccion anterior) -->
-     <div class="pt-5 mt-5 espacioEntreSecciones"></div>
-  <div class="row"  data-aos="fade-up" data-aos-duration="1500">
+  <div class="espacioEntreSecciones mx-auto text-center" style="padding-top: 157px; padding-bottom: 45px; color:#1E6F9F">
+  ────────────── • • • • • • • • • • • ──────────────
+</div>
+
+  <div class="row">
+    <div class="text-center containerTit" data-aos="fade-up" data-aos-duration="1500">
+      <h4 class="tituloCardEstilo">
+        PRODUCTOS Y SERVICIOS
+      </h4>
+    </div>
     <!-- titulo -->
     <div class="container-fluid" id="idSecProdySer">
       <!-- Este id responde a un funcion tipo ancla en el componente navbar (click)="scrollTo('idSecProdySer')-->
-      <div class="text-center containerTit">
-        <h4 class="tituloCardEstilo">
-          PRODUCTOS Y SERVICIOS
-        </h4>
-      </div>
+      
     </div>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-12 pt-4 button-grid-container">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12 pt-4 button-grid-container" data-aos="fade-up"
+      data-aos-duration="1500">
       <div class="button-grid" id="buttonGrid" #buttonGrid>
         <!-- Botón para card 1 -->
         <div class="button butCont1" (click)="openCloseCards(1); reducirTaman(); scrollTo('idCard1')">

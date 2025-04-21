@@ -125,8 +125,7 @@
   }
 
   50% {
-    box-shadow: 0 0 35px rgba(0, 180, 230, 0.9);
-    /* azul claro más brillante y con mayor alcance */
+    box-shadow: 0 0 35px rgba(0, 180, 230, 0.9);  
   }
 }
 
@@ -165,15 +164,13 @@
   }
 }
 
-/* Teléfonos en horizontal (landscape): width aún es "mobile", pero height se reduce mucho */
+/* Teléfonos en horizontal (landscape) */
 @media (max-width: 1500px) and (max-height: 430px) {
   .loading-container {
     background: url('/assets/fondos/fondoPressMed.png') no-repeat center center;
     background-size: cover;
     width: 100vw;
-    /* Ajustamos a toda la pantalla */
-    height: 100vh;
-    /* También ajustamos la altura al 100% de la pantalla */
+    height: 100vh;   
   }
 
   .spinner-wrapper {
@@ -181,5 +178,38 @@
     margin-top: -80px;
     /* espacio desde el top */
   }
+}
 
+
+
+/* Tablets de 7 pulgadas a 10 pulgadas en portrait */
+@media (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) and (max-height: 1024px) {
+  .loading-container {
+    background: url('/assets/fondos/fondoCelMed.png') no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;   
+  }
+
+  .spinner-wrapper {
+    zoom: 0.8;
+    margin-top: -80px;
+    /* espacio desde el top */
+  }
+}
+
+/* Tablets de 7 pulgadas a 10 pulgadas en landscape */
+@media (min-width: 600px) and (max-width: 1024px) and (orientation: landscape) and (max-height: 800px)  {
+  .loading-container {
+    background: url('/assets/fondos/fondoPressMed.png') no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;   
+  }
+
+  .spinner-wrapper {
+    zoom: 0.8;
+    margin-top: -80px;
+    /* espacio desde el top */
+  }
 }

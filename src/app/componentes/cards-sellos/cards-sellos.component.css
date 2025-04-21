@@ -53,9 +53,9 @@
  .tituloCard {
      border-top: none;
      border-right: none;
-     border-bottom: 2px dotted #208FD4;
-     border-left: 2px dotted #208FD4;
-     color: #208FD4 !important;
+     border-bottom: 2px dotted #1E6F9F;
+     border-left: 2px dotted #1E6F9F;
+     color: #1E6F9F!important;
 
  }
 
@@ -92,7 +92,7 @@
  }
 
  .modal-header {
-     background-color: #208FD4;
+     background-color: #1E6F9F;
      color: white;
      border-top-left-radius: 12px;
      border-top-right-radius: 12px;
@@ -143,13 +143,13 @@
      width: 100%;
      height: 100%;
      object-fit: cover;
-     background-color: #208FD4;
+     background-color: #1E6F9F;
 
  }
 
  .btn-outline-petrolero {
-     color: #208FD4;
-     border: 2px solid #208FD4;
+     color: #1E6F9F;
+     border: 2px solid #1E6F9F;
      background-color: transparent;
      transition: all 0.3s ease;
      font-size: 1rem;
@@ -157,7 +157,7 @@
  }
 
  .btn-outline-petrolero:hover {
-     background-color: #208FD4;
+     background-color: #1E6F9F;
      color: white;
      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
  }

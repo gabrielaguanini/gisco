@@ -53,9 +53,9 @@
  .tituloCard {
      border-top: none;
      border-right: none;
-     border-bottom: 2px dotted #208FD4;
-     border-left: 2px dotted #208FD4;
-     color: #208FD4 !important;
+     border-bottom: 2px dotted #1E6F9F;
+     border-left: 2px dotted #1E6F9F;
+     color: #1E6F9F !important;
 
  }
 
@@ -92,7 +92,7 @@
  }
 
  .modal-header {
-     background-color: #208FD4;
+     background-color: #1E6F9F;
      color: white;
      border-top-left-radius: 12px;
      border-top-right-radius: 12px;

@@ -1,23 +1,29 @@
-
 /* Contenedor con posición relativa para colocar logo centrado */
 .button-grid-container {
   position: relative;
-  width: 100%; /* Permite que ocupe el 100% del contenedor */
+  width: 100%;
+  /* Permite que ocupe el 100% del contenedor */
   display: flex;
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center;
+  /* Centra el contenido horizontalmente */
+  align-items: center;
+  /* Centra el contenido verticalmente */
 }
 
 /* Grilla 2x2 */
 .button-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Grilla de 2 columnas */
+  grid-template-columns: repeat(2, 1fr);
+  /* Grilla de 2 columnas */
   gap: 20px;
-  justify-items: center; /* Centra los botones */
+  justify-items: center;
+  /* Centra los botones */
   align-items: center;
-  width: 100%; /* Establece el 100% por defecto */
-  max-width: 500px; /* Tamaño máximo */
-  
+  width: 100%;
+  /* Establece el 100% por defecto */
+  max-width: 500px;
+  /* Tamaño máximo */
+
 }
 
 /* Logo centrado encima de la grilla */
@@ -35,13 +41,14 @@
   width: 80px;
   height: auto;
   filter: brightness(0) saturate(100%) invert(28%) sepia(61%) saturate(1896%) hue-rotate(180deg) brightness(95%) contrast(98%);
-  opacity: 0.5; /* MÁS transparente */
+  opacity: 0.5;
+  /* MÁS transparente */
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .logo-img:hover {
   transform: scale(1.05);
-  opacity: 0.1; 
+  opacity: 0.1;
 }
 
 /* Botones estilo card */
@@ -65,7 +72,7 @@
 .button:hover {
   transform: translateY(-5px) scale(1.03);
   background: #f7fbff;
-  border-color: #208FD4;
+  border-color: #1E6F9F;
   box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
 }
 
@@ -90,8 +97,13 @@
 }
 
 @keyframes shine {
-  0% { transform: translateX(-100%) rotate(25deg); }
-  100% { transform: translateX(100%) rotate(25deg); }
+  0% {
+    transform: translateX(-100%) rotate(25deg);
+  }
+
+  100% {
+    transform: translateX(100%) rotate(25deg);
+  }
 }
 
 /* Contenido del botón */
@@ -107,7 +119,7 @@
 .button-content i {
   font-size: 5rem;
   margin-bottom: 10px;
-  color: #208FD4;
+  color: #1E6F9F;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -122,7 +134,7 @@
 .button-content i.fa-caret-down {
   font-size: 1.2rem;
   margin-top: 5px;
-  color: #208FD4;
+  color: #1E6F9F;
   transition: transform 0.3s ease;
 }
 
@@ -135,20 +147,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* CENTRA en vertical (si quieres, opcional) */
+  justify-content: center;
+  /* CENTRA en vertical (si quieres, opcional) */
   min-height: 100vh;
   gap: 20px;
   text-align: center;
 }
 
 /* titulo cards container */
-.tituloCardEstilo {    
-  background: #208FD4;
+.tituloCardEstilo {
+  background: #1E6F9F;
 
   color: white;
   border-top: none;
   border-right: none;
-  border-bottom: 1px solid #E31505; ;
+  border-bottom: 1px solid #E31505;
+  ;
   border-left: 1px solid #E31505;
 
   padding: 0.5rem 1.2rem;
@@ -167,14 +181,14 @@
 @media (max-width: 768px) {
   i {
     font-size: 13vw !important;
-    margin:27px;
+    margin: 27px;
   }
 
   .logo-img {
     width: 60px;
   }
 
-  
+
 }
 
 /* Pantallas pequeñas tamaño icono, texto, logo y button */
@@ -187,17 +201,30 @@
     width: 50px;
   }
 
-  .button-content span{
+  .button-content span {
     font-size: 92%;
   }
+
+  .espacioEntreSecciones {
+    zoom: 0.6;
+  }
 }
+
+
 
 /* Teléfonos en horizontal (landscape) */
 @media (max-width: 1500px) and (max-height: 430px) {
-
-  .closeCard{
+  .closeCard {
     margin-right: 6%;
   }
+
+  .button-grid-container {
+    zoom: 0.7;
+  }
+
+  .espacioEntreSecciones {
+    zoom: 0.6;
+   
+  }
+
 }
-
-

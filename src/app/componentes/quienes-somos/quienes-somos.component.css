@@ -38,7 +38,7 @@
 }
 
 .icon-section {
-    color: #208FD4;
+    color: #1E6F9F;
 }
 
 .iconCustom {
@@ -51,7 +51,7 @@
 }
 
 .tituloCardEstilo {
-    background: #208FD4;
+    background: #1E6F9F;
 
     color: white;
     border-top: none;
@@ -71,7 +71,7 @@
 
 .quienesSomosBox {
     background-color: #f9f9f9;
-    border: 3px solid #208FD4;
+    border: 3px solid #1E6F9F;
     border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -110,7 +110,6 @@
 .card img:hover {
     transform: scale(1.05);
 }
-
 
 
 /* ANIMACION SECCION QUIENES SOMOS */
@@ -153,6 +152,16 @@
     .contEmprLog {
         padding: 4rem;
     }
+    .cardsCon{
+        zoom: 0.7;
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .espacioEntreSecciones{
+       zoom: 0.6;
+    }
+
 }
 
 
@@ -164,5 +173,9 @@
 
     .textoCardServ {
         font-size: 0.7rem;
+    }
+
+    .espacioEntreSecciones{
+        zoom: 0.6;
     }
 }

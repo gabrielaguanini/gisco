@@ -18,7 +18,26 @@ export class LoadingComponent implements OnInit {
   backgroundLoaded = false;
 
   ngOnInit(): void {
+    this.precargarFondos();
+    this.navegarAHome();
 
+  }
+
+  ngAfterViewInit() {
+    Aos.init({
+      mirror: false, // no repetir en scroll inverso
+      once: true
+    });
+
+
+    setTimeout(() => {
+      Aos.refresh(); // refresca por si algo cargó después
+    }, 1000);
+  }
+
+  //FUNCIONES
+
+  navegarAHome(): void {
     setTimeout(() => {
       this.isFadingOut = true;
 
@@ -28,18 +47,19 @@ export class LoadingComponent implements OnInit {
     }, 5000);
   }
 
-  ngAfterViewInit() {
-    Aos.init({
-      mirror: false, // no repetir en scroll inverso
-      once: true
-    });
   
-
-    setTimeout(() => {
-      Aos.refresh(); // refresca por si algo cargó después
-    }, 1000);
+  precargarFondos(): void { // carga las img de los bg mas rapido
+    const rutas = [
+      '/assets/fondos/fondoCel.png',
+      '/assets/fondos/fondoPress.png',
+      '/assets/fondos/fondoPressMed.png',      
+    ];
+  
+    rutas.forEach(ruta => {
+      const img = new Image();
+      img.src = ruta;
+    });
   }
-
 
 }
 

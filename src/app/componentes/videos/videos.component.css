@@ -43,14 +43,14 @@
 }
 
 .card-title {
-    color: #208FD4;
+    color: #1E6F9F;
     /* Color azul para el título */
     font-weight: bold;
     font-size: 16px;
 }
 
 .card-footer {
-    background-color: #208FD4;
+    background-color: #1E6F9F;
     /* Azul para el pie de la card */
     text-align: center;
     padding: 8px;
@@ -70,7 +70,7 @@
 .video-container {
     background-color: #f1f1f1;
     /* Fondo gris claro para el contenedor del video */
-    border: 1px solid #208FD4;
+    border: 1px solid #1E6F9F;
     /* Marco azul para el contenedor del video */
     border-radius: 10px;
     margin-bottom: 10px;

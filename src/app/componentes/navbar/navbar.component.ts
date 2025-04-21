@@ -11,7 +11,9 @@ import Aos from 'aos';
 })
 export class NavbarComponent {
 
-  constructor() { }
+  ngOnInit(): void {
+    this.cargarBGNav(); // carga img de background
+  }
 
   ngAfterViewInit(): void {
     Aos.init({
@@ -27,5 +29,9 @@ export class NavbarComponent {
     }
   }
 
+  cargarBGNav(): void {
+    const fondoCel = new Image();
+    fondoCel.src = '/assets/fondos/fondoNavComun.png';
+  }
 
 }

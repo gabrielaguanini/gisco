@@ -19,6 +19,10 @@ export class SliderComponent {
   carouselInstanceDesktop: any;
   carouselInstanceMobile: any;
 
+  ngOnInit(): void {
+    this.precargarSlider();
+  }
+
   ngAfterViewInit(): void {
     this.iniciarCarousels();
 
@@ -51,18 +55,34 @@ export class SliderComponent {
     }, 500);
   }
 
-  //para pantallas tactiles
+  precargarSlider(): void { //Carga las imagenes del slider mas rapidamente
+    const rutasSlider = [
+      'assets/slider/img1.png',
+      'assets/slider/img2.png',
+      'assets/slider/img3.png',
+      'assets/slider/imgCel1.png',
+      'assets/slider/imgCel2.png',
+      'assets/slider/imgCel3.png'
+    ];
+
+    rutasSlider.forEach(ruta => {
+      const img = new Image();
+      img.src = ruta;
+    });
+  }
+
+  //funciones para pantallas tactiles
 
   stopCarousel(): void {
     this.carouselInstanceMobile?.pause();
   }
-  
+
   playCarousel(): void {
     this.carouselInstanceMobile?.cycle();
   }
-  
+
   disableContextMenu(event: MouseEvent): void {
     event.preventDefault(); // solo evita clic derecho o long press
   }
-  
+
 }
