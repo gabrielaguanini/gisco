@@ -1,3 +1,4 @@
+/* CONTENEDOR PRINCIPAL */
 .containerBackG {
     background-color: white;
     overflow-x: hidden;
@@ -5,6 +6,50 @@
     overflow-y: hidden;
 }
 
+/* SECCIÓN QUIÉNES SOMOS */
+.quienesSomosBox {
+    background-color: #f9f9f9;
+    border: 3px solid #1E6F9F;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imgLogoEscudo {
+    width: 70px;
+    height: 70px;
+}
+
+.tituloCardEstilo {
+    background: #1E6F9F;
+    color: white;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #E31505;
+    border-left: 1px solid #E31505;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.7rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.textoQuienesSomos {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 1rem;
+}
+
+/* ESPACIO ENTRE SECCIONES */
+.espacioEntreSecciones {
+    color: #1E6F9F;
+    padding-top: 112px;
+    text-align: center;
+}
+
+/* SECCIÓN NUESTROS SERVICIOS */
 .card {
     background-color: #fff;
     border-radius: 0.7em;
@@ -16,25 +61,11 @@
     flex-direction: column;
     justify-content: space-between;
     border-radius: 1rem;
-
     border: 1px solid #ddd;
 }
 
-
-
-
 .card:hover {
     transform: translateY(-5px);
-}
-
-/* Asegura que todas las cards tengan el mismo tamaño*/
-.row.d-flex .col-lg-6 {
-    display: flex;
-}
-
-.imgLogoEscudo {
-    width: 70px;
-    height: 70px;
 }
 
 .icon-section {
@@ -45,60 +76,35 @@
     margin-bottom: 1rem;
 }
 
-.text-section p {
-    margin: 0;
-    padding: 0 1rem;
+.textoCardServ {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
 }
 
-.tituloCardEstilo {
-    background: #1E6F9F;
-
-    color: white;
-    border-top: none;
-    border-right: none;
-    border-bottom: 1px solid #E31505;
-    ;
-    border-left: 1px solid #E31505;
-
-    padding: 0.5rem 1.2rem;
-    border-radius: 0.7rem;
-    display: inline-block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-.quienesSomosBox {
-    background-color: #f9f9f9;
-    border: 3px solid #1E6F9F;
-    border-radius: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.iconQuienes {
-    color: #208FD4;
-}
-
-
-.textoQuienesSomos {
+.titulo-responsive {
     font-size: 1.2rem;
-    font-weight: 500;
-    color: #333;
-    line-height: 1.6;
-    padding: 0 1rem;
+    font-weight: bold;
 }
 
-
-
-
-/* Contenedor de los logos */
-.card .row {
-    justify-content: center;
-    align-items: center;
+.text-break {
+    word-wrap: break-word;
 }
 
-/* Estilo para los logos */
+/* ANIMACION SECCION QUIÉNES SOMOS */
+.fade-in-up {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 1.5s ease, opacity 1.5s ease;
+}
+
+.oculto-scroll {
+    opacity: 0;
+    transform: translateY(100px);
+    /* igual que AOS fade-up */
+}
+
+/* SECCIÓN EMPRESAS CON CONTRATOS VIGENTES 
 .card img {
     max-height: 60px;
     width: 100%;
@@ -110,30 +116,11 @@
 .card img:hover {
     transform: scale(1.05);
 }
-
-
-/* ANIMACION SECCION QUIENES SOMOS */
-/* Es unica, las demas secciones usan AOS xq AOS aqui en pantallas SM activa la animacion al iniciar el componente*/
-
-.fade-in-up {
-    opacity: 1;
-    transform: translateY(0);
-    transition: transform 1.5s ease, opacity 1.5s ease;
-  }
-  
-  .oculto-scroll {
-    opacity: 0;
-    transform: translateY(100px); /* igual que AOS fade-up */
-  }
-  
-
-
-
-
+    */
 
 /* RESPONSIVO */
 
-/* ancho de cards para pantallas grandes*/
+/* ancho de cards para pantallas grandes */
 @media (min-width: 992px) {
     .custom-row>div {
         max-width: 1000px;
@@ -152,20 +139,19 @@
     .contEmprLog {
         padding: 4rem;
     }
-    .cardsCon{
+
+    .cardsCon {
         zoom: 0.7;
         padding-left: 6rem;
         padding-right: 6rem;
     }
 
-    .espacioEntreSecciones{
-       zoom: 0.6;
+    .espacioEntreSecciones {
+        zoom: 0.6;
     }
-
 }
 
-
-/* teléfonos en vertical (portrait) Tamaño de la fuente del titulo y texto de las cards de servicios para */
+/* teléfonos en vertical (portrait) */
 @media (max-width: 430px) and (max-height: 1500px) {
     .titulo-responsive {
         font-size: 0.9rem;
@@ -175,7 +161,7 @@
         font-size: 0.7rem;
     }
 
-    .espacioEntreSecciones{
+    .espacioEntreSecciones {
         zoom: 0.6;
     }
 }

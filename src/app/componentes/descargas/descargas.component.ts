@@ -13,8 +13,6 @@ export class DescargasComponent implements AfterViewInit{
  ngAfterViewInit(): void {
     AOS.init({
       once: true, // para que se ejecute solo una vez
-      duration: 3000, // duración en milisegundos (1000ms = 1s)
-      easing: 'ease-in-out', // suavidad de la animación
     });
   }
 }

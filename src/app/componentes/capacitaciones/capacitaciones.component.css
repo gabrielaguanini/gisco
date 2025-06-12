@@ -44,11 +44,12 @@
 
   border-top: none;
   border-right: none;
-  border-bottom: 1px solid #E31505; ;
-  border-left:none;
+  border-bottom: 1px solid #E31505;
+  ;
+  border-left: none;
   border-radius: 20%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  
+
 }
 
 .bg-petrolero {
@@ -57,7 +58,8 @@
   color: white;
   border-top: none;
   border-right: none;
-  border-bottom: 1px solid #E31505; ;
+  border-bottom: 1px solid #E31505;
+  ;
   border-left: 1px solid #E31505;
 
   padding: 0.5rem 1.2rem;
@@ -115,7 +117,7 @@ ul li::before {
   /* se puede cambiar por '✔', '➤', '✦', etc. */
   position: absolute;
   left: 0;
-  color: #1E6F9F!important;
+  color: #1E6F9F !important;
   font-size: 1.2em;
   line-height: 1;
 }
@@ -129,11 +131,10 @@ ul span {
   height: 80px;
 }
 
-  /* Para lanscape o cel volteado, le da padding para que la barra de navegacion de android no tape parte de la pantalla */
-  @media screen and (max-height: 450px) and (max-width: 950px) {
-    .containerBackG {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
+/* Para lanscape o cel volteado, le da padding para que la barra de navegacion de android no tape parte de la pantalla */
+@media screen and (max-height: 450px) and (max-width: 950px) {
+  .containerBackG {
+    padding-left: 50px;
+    padding-right: 50px;
   }
-  
+}

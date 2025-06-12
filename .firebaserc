@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "giscoarg"
-  }
+    "default": "giscoarg",
+    "giscoarg": "giscoarg",
+    "giscosrl": "giscosrl"
+  },
+  "targets": {},
+  "etags": {}
 }

@@ -135,6 +135,7 @@
 @media (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) and (max-height: 1024px) {
   .footer-modern {
     background-image: url('/assets/fondos/fondoCel.png');
+    text-align: center;
   }
 }
 
