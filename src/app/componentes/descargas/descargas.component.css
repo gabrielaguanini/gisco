@@ -26,10 +26,10 @@
   background-size: cover;
 }
 
-/* quita el item de la lista del navbar con id idItemNoMostrar */
+/* quita el item de la lista del navbar con id idItemNoMostrar 
 ::ng-deep #idItemNoMostrar {
   display: none;
-}
+} */
 
 
 
@@ -108,6 +108,32 @@
 .btn-outline-primary:hover {
   background-color: #1E6F9F;
   color: white;
+}
+
+/* Animaciones iconos */
+.aIcon {
+  display: inline-block;
+  cursor: pointer;
+  transform-origin: center center;
+}
+
+.aIcon:hover {
+  animation: spinSmoothBounce 1s forwards;
+}
+
+@keyframes spinSmoothBounce {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(360deg);
+  }
+  90% {
+    transform: rotate(345deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Teléfonos en horizontal (landscape), le da padding para que la barra de navegacion de android no tape parte de la pantalla */

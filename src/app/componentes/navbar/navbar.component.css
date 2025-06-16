@@ -20,7 +20,7 @@ a {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* Tamaño iconoces redes sociales*/
+/* Tamaño iconos redes sociales*/
 .aIcon {
     width: 36px;
     height: 36px;
@@ -29,6 +29,27 @@ a {
 /* Tamaño item Productos y Servicios*/
 .nowrap {
     white-space: nowrap;
+}
+
+/* Animaciones iconos redes sociales */
+.aIcon {
+    transition: transform 0.6s ease;
+    transform-origin: center center;
+}
+
+.aIcon:hover {
+    transform: rotate(360deg);
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.6), rgba(227, 21, 5, 0.2));
+}
+
+/* Animaciones elementos de la lista del nav */
+.navbar-nav li {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav li:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
 }
 
 
@@ -49,11 +70,13 @@ a {
     .containerRedes {
         display: none !important;
     }
-    .logoNAv{
+
+    .logoNAv {
         padding-left: 5%;
     }
-    .contaBtnHamb{
+
+    .contaBtnHamb {
         margin-right: 7%;
     }
- 
+
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import Aos from 'aos';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,6 +11,8 @@ import Aos from 'aos';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  
+  constructor(public router: Router) {}
 
   ngOnInit(): void {
     this.cargarBGNav(); // carga img de background

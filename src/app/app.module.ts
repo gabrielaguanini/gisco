@@ -17,6 +17,8 @@ import { QuienesSomosComponent } from './componentes/quienes-somos/quienes-somos
 import { CapacitacionesComponent } from './componentes/capacitaciones/capacitaciones.component';
 import { DescargasComponent } from './componentes/descargas/descargas.component';
 import { ContainerCardsComponent } from './componentes/container-cards/container-cards.component';
+import { ContactoComponent } from './componentes/contacto/contacto.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { ContainerCardsComponent } from './componentes/container-cards/container
     QuienesSomosComponent,
     CapacitacionesComponent,
     DescargasComponent,
-    ContainerCardsComponent
+    ContainerCardsComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

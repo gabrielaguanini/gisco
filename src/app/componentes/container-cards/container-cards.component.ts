@@ -52,6 +52,7 @@ export class ContainerCardsComponent {
     console.log('Tamaño restaurado al original');
   }
 
+  // ancla
   scrollTo(anchor: string): void {
     setTimeout(() => {
       const element = document.getElementById(anchor);

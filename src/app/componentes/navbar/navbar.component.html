@@ -7,22 +7,23 @@
       <img src="assets/LogoGisco.png" alt="Logo Gisco" class="img-fluid w-75 h-75">
     </a>
 
-    <!-- Iconos sociales centrados (solo visibles en lg y mayor) -->
+    <!-- Iconos redes sociales centrados (solo visibles en lg y mayor) -->
     <div class="d-none d-lg-flex flex-grow-1 justify-content-center gap-2 containerRedes">
-      <a href="https://www.facebook.com/" target="_blank" class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
-        <i class="fab fa-facebook-f"></i>
+      <a href="https://ar.linkedin.com/" target="_blank"
+        class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
+        <i class="fab fa-linkedin"></i>
       </a>
-      <a href="https://x.com/?lang=es" target="_blank" class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://wa.me/5491112345678" target="_blank" class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-      <a href="https://www.instagram.com/" target="_blank" class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
+      <a href="https://www.instagram.com/" target="_blank"
+        class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
         <i class="fab fa-instagram"></i>
       </a>
-      <a href="mailto:ejemplo@dominio.com" target="_blank" class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gisco@gisco.com.ar&su=Asunto&body=Texto%20del%20mensaje" target="_blank" rel="noopener noreferrer"
+        class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
         <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://wa.me/5491112345678" target="_blank"
+        class="text-white border border-white rounded-circle d-flex align-items-center justify-content-center text-decoration-none aIcon">
+        <i class="fab fa-whatsapp"></i>
       </a>
     </div>
 
@@ -43,11 +44,15 @@
             [routerLink]="['/capacitaciones']">Capacitaciones</a>
         </li>
         <li class="nav-item text-center" id="idItemNoMostrar">
-          <a class="nav-link text-white nowrap" href="#"
-            (click)="scrollTo('idSecProdySer'); $event.preventDefault()">Productos y Servicios</a>
+          <a [routerLink]="['/home']" [fragment]="'idSecProdySer'" class="nav-link text-white nowrap">
+            Productos y Servicios
+          </a>
         </li>
         <li class="nav-item text-center">
           <a class="nav-link text-white" [routerLink]="['/descargas']">Descargas</a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="nav-link text-white" [routerLink]="['/contacto']">Contacto</a>
         </li>
       </ul>
     </div>

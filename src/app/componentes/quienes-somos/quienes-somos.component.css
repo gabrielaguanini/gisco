@@ -49,7 +49,7 @@
     text-align: center;
 }
 
-/* SECCIÓN NUESTROS SERVICIOS */
+/* SECCIÓN SOLUCIONES PROFESIONALES */
 .card {
     background-color: #fff;
     border-radius: 0.7em;
@@ -89,6 +89,32 @@
 
 .text-break {
     word-wrap: break-word;
+}
+
+/* ANIMACION SOLUCIONES PROFESIONALES */
+.iconCustom {
+  display: inline-block;
+  cursor: pointer;
+  transform-origin: center center;
+}
+
+.iconCustom:hover {
+  animation: spinSmoothBounce 1s forwards;
+}
+
+@keyframes spinSmoothBounce {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(360deg);
+  }
+  90% {
+    transform: rotate(345deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* ANIMACION SECCION QUIÉNES SOMOS */

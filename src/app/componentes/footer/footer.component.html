@@ -6,40 +6,43 @@
                 <h5 class="footer-title">Servicios</h5>
                 <div class="footer-link">Reparación de sellos</div>
                 <div class="footer-link">Suministro de repuestos</div>
-                <div class="footer-link">Mantenimiento preventivo</div>
+                <div class="footer-link">Provisión de acoplamientos</div>
                 <div class="footer-link">Alineación láser</div>
             </div>
             <!-- Enlaces -->
             <div class="col-lg-6 col-md-6 mb-5 mb-lg-0 animate-fade-up delay-1 text-md-center">
                 <h5 class="footer-title">Enlaces</h5>
-                <div class="footer-link">Quiénes Somos</div>
-                <div class="footer-link">Empresas que confían en nosotros</div>
-                <div class="footer-link">Productos y Servicios</div>
-                <div class="footer-link">Videos</div>
+                <div class="footer-link" (click)="scrollTo('quienes-somos')">Quiénes Somos</div>
+                <div class="footer-link"><a [routerLink]="['/home']" [fragment]="'idSecProdySer'"
+                        class="nav-link nowrap footer-link">
+                        Productos y Servicios
+                    </a></div>
+                <div class="footer-link" (click)="scrollTo('idContainerVideo')">Videos</div>
+                <div class="footer-link" [routerLink]="['/capacitaciones']">Capacitaciones</div>
+                <div class="footer-link" [routerLink]="['/descargas']">Descargas</div>
+                <div class="footer-link" [routerLink]="['/contacto']">Contacto</div>
             </div>
             <!-- Redes sociales -->
             <div class="col-lg-12 col-md-12 text-center animate-fade-up delay-2">
                 <h5 class="footer-title text-center d-inline-block">Redes Sociales</h5>
                 <div class="social-icons d-flex justify-content-center flex-wrap conRedes">
-                    <a href="https://facebook.com" target="_blank" class="social-icon"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a href="https://x.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="https://wa.me/5491112345678" target="_blank" class="social-icon"><i
-                            class="fab fa-whatsapp"></i></a>
+                    <a href="https://ar.linkedin.com/" target="_blank" class="social-icon"><i
+                            class="fab fa-linkedin"></i></a>
                     <a href="https://instagram.com" target="_blank" class="social-icon"><i
                             class="fab fa-instagram"></i></a>
-                    <a href="mailto:ejemplo@dominio.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="mailto:gisco@gisco.com.ar?subject=Consulta&body=Hola%2C%20quiero%20hacer%20una%20consulta."
+                        target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/5491112345678" target="_blank" class="social-icon"><i
+                            class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
-
-
         </div>
 
         <hr class="footer-divider">
-
         <div class="text-center text-white mt-3 animate-fade-up delay-3 contDerRes">
-            <p class="mb-0">© 2025 <strong>GISCO S.R.L.</strong> | Todos los derechos reservados.</p>
+            <p class="mb-0 small">© 2025 <strong>GISCO S.R.L.</strong> | Todos los derechos reservados.</p>
         </div>
+
     </div>
 </footer>
 
@@ -48,25 +51,21 @@
 <footer class="text-center border-top border-1 p-1 pb-3"
     style="background-color: black; color: #5eb3cc; border-color: #5eb3cc; font-family: 'Courier New', monospace;">
     <div class="container">
-        <a href="https://portfoliogabg.web.app"
-           class="blink crt-flicker"
-           style="font-size: 0.5rem; /* para xs */ color: #5eb3cc; text-decoration: none;"
-           target="_blank">
-          <p class="mb-0 crt-flicker d-flex flex-column flex-sm-row justify-content-center" 
-             style="font-size: 0.5rem; /* para xs */ color: inherit;">
-            Desarrollado por 
-            <span class="fw-bold" 
-                  style="font-size: 0.6rem; /* para xs */ color: inherit;">
-              _.×º°·´*·-꧁༒☬_jade_nofx_☬༒꧂-·´*·°º×._
-            </span>  
-            <span class="d-none d-sm-inline"> | </span>
-            <span class="blink crt-flicker" 
-                  style="font-size: 0.5rem; /* para xs */ color: inherit;">2025</span>
-            <span class="d-none d-sm-inline"> | </span>
-            Ver más
-          </p>
+        <a href="https://portfoliogabg.web.app" class="blink crt-flicker"
+            style="font-size: 0.5rem; /* para xs */ color: #5eb3cc; text-decoration: none;" target="_blank">
+            <p class="mb-0 crt-flicker d-flex flex-column flex-sm-row justify-content-center"
+                style="font-size: 0.5rem; /* para xs */ color: inherit;">
+                Desarrollado por
+                <span class="fw-bold" style="font-size: 0.6rem; /* para xs */ color: inherit;">
+                    _.×º°·´*·-༒_jade_nofx_༒-·´*·°º×._
+                </span>
+                <span class="d-none d-sm-inline"> | </span>
+                <span class="blink crt-flicker" style="font-size: 0.5rem; /* para xs */ color: inherit;">2025</span>
+                <span class="d-none d-sm-inline"> | </span>
+                Ver más
+            </p>
         </a>
-      </div>
-      
+    </div>
+
 
 </footer>
